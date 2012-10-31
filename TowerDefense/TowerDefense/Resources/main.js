@@ -3,6 +3,7 @@ Require("class.js");
 var GameJS = Class(object,
                    {
                        onCreate: function () {
+                           print("Create Game js");
                            this.js_Game = null;
                            this.js_Scene = null;
                            this.loadJS();

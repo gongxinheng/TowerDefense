@@ -7,11 +7,29 @@
           "multi": 0,
           "name": "locationinput",
           "classname": "Input"
+        },
+        {
+          "name": "Sprite",
+          "scale": 1,
+          "action": 0,
+          "rectpak": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "usebatchnode": 0,
+          "isbigimage": 0,
+          "enabletouch": 0,
+          "enableselfcollider": 0,
+          "file": "mapBg.png",
+          "filetype": 0,
+          "classname": "Sprite"
         }
       ],
       "zorder": 0,
-      "y": 334,
-      "x": 503,
+      "y": 247,
+      "x": 345,
       "name": "backgroud",
       "objecttag": 10001,
       "visible": 1,
@@ -38,8 +56,8 @@
   "zorder": 0,
   "y": 0,
   "x": 0,
-  "name": "gamemap",
-  "objecttag": 10000,
+  "name": "GameObject",
+  "objecttag": -1,
   "visible": 1,
   "classname": "GameObject"
 }
