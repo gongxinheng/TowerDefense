@@ -23,8 +23,9 @@ AppDelegate::~AppDelegate()
 
 bool AppDelegate::applicationDidFinishLaunching()
 {
-
-	Sweetpome::GameWorldStart( "main.js",480,320 );
+	printf("casacasc");
+	Sweetpome::GameWorldStart( "main.js",640, 960 );
+	printf("vvxcxvc");
 
 	//std::string str = "main.js";
 	//std::string jsPath = cocos2d::CCFileUtils::sharedFileUtils()->fullPathFromRelativePath(str.c_str()) ;

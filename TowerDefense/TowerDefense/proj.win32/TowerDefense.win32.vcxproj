@@ -136,8 +136,6 @@
     <None Include="..\Resources\fps_images.png" />
     <None Include="..\Resources\guntower.json" />
     <None Include="..\Resources\guntower.plist" />
-    <None Include="..\Resources\hello.lua" />
-    <None Include="..\Resources\hello2.lua" />
     <None Include="..\Resources\helloworld.js" />
     <None Include="..\Resources\helloworld.json" />
     <None Include="..\Resources\helloworld.plist" />

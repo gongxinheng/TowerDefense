@@ -44,8 +44,6 @@
     <None Include="..\Resources\dog.png">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\hello.lua" />
-    <None Include="..\Resources\hello2.lua" />
     <None Include="..\Resources\menu1.png">
       <Filter>resource</Filter>
     </None>
