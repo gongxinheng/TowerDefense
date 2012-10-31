@@ -134,10 +134,10 @@
     <None Include="..\Resources\fps_images-hd.png" />
     <None Include="..\Resources\fps_images-ipadhd.png" />
     <None Include="..\Resources\fps_images.png" />
+    <None Include="..\Resources\gamemap.js" />
+    <None Include="..\Resources\gamemap.json" />
     <None Include="..\Resources\guntower.json" />
     <None Include="..\Resources\guntower.plist" />
-    <None Include="..\Resources\helloworld.js" />
-    <None Include="..\Resources\helloworld.json" />
     <None Include="..\Resources\helloworld.plist" />
     <None Include="..\Resources\Icon.png" />
     <None Include="..\Resources\land.png" />

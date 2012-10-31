@@ -28,8 +28,8 @@
         }
       ],
       "zorder": 0,
-      "y": 247,
-      "x": 345,
+      "y": 480,
+      "x": 320,
       "name": "backgroud",
       "objecttag": 10001,
       "visible": 1,
@@ -37,10 +37,29 @@
     },
     {
       "gameobjects": [],
-      "components": [],
+      "components": [
+        {
+          "name": "selection",
+          "scale": 1,
+          "action": 0,
+          "rectpak": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "usebatchnode": 0,
+          "isbigimage": 0,
+          "enabletouch": 0,
+          "enableselfcollider": 0,
+          "file": "selectionframe.png",
+          "filetype": 0,
+          "classname": "Sprite"
+        }
+      ],
       "zorder": 0,
-      "y": 334,
-      "x": 503,
+      "y": 328,
+      "x": 717,
       "name": "selectionframe",
       "objecttag": 10002,
       "visible": 1,

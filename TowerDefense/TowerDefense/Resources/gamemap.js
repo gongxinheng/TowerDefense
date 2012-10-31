@@ -1,3 +1,6 @@
+var TILESIZE = 64; // 格子大小
+var SCREENWIDTH     = 960; // 屏幕宽
+var SCREENHEIGHT    = 640; // 屏幕高
 
 var gamemap = Class(object, {
     onCreate: function (objectTag) {
@@ -9,19 +12,19 @@ var gamemap = Class(object, {
         //        backButton.onClick = function () {
         //            game.js_Game.exit();
         //        }
-
         print("!!!!!!!!!!!!");
+        var root = GetRootGameObj();
         this.sprites = CreateGameObjectFromTemplate("sprites");
-        this.towers = CreateGameObjectFromTemplate("towers");
+        this.towers = CreateGameObjectFromTemplate("towers");      // 塔图片
+        this.selectionframe = root.getChildByTag(10002); // 选择框
         //var aniEnemydie = sprites.getComponentJS("enemydie");
         //aniEnemydie.setAction(0);
-        var root = GetRootGameObj();
+
         root.addChild(this.sprites);
 
         var input = GetSubComponent(10001, "locationinput");
         //var bg = getComponentJS("backgroud");
-        print(input);
-        //var input = bg.getNodeByName("locationinput");
+        print(this.selectionframe);
         var self = this;
         input.MultiTouchPressed = function (touches) {
             self.multiTouchPressed(touches);
@@ -38,52 +41,26 @@ var gamemap = Class(object, {
     singleTouchPressed: function (x, y) {
         print("x=" + x + "y=" + y);
         var root = GetRootGameObj();
-        print("ccccccccccc");
-        var towers = CreateGameObjectFromTemplate("towers");
-        var tower = towers.getComponentJS("guntower");
-        print(tower);
-        tower.setAction(0);
-        root.addChild(towers);
-        print("fasfsdafff");
+        //        print("ccccccccccc");
+        //        var towers = CreateGameObjectFromTemplate("towers");
+        //        var tower = towers.getComponentJS("guntower");
+        //        print(tower);
+        //        tower.setAction(0);
+        root.addChild(this.selectionframe);
+        var tilepos = this.calcTilePos(x, y);
         var pos = new GLKVector4();
-        pos.x = x;
-        pos.y = y;
-        tower.setPosition(pos);
+        pos.x = tilepos["x"] * TILESIZE + TILESIZE / 2;
+        pos.y = tilepos["y"] * TILESIZE + TILESIZE / 2;
+        print("x1=" + tilepos["x"] + "y1=" + tilepos["y"]);
+        this.selectionframe.setPosition(pos);
+    },
+
+    // 根据传入坐标返回格子所在的行列数
+    calcTilePos: function (x, y) {
+        var pos = new Array();
+        pos["x"] = Math.floor(x / TILESIZE);
+        pos["y"] = Math.floor(y / TILESIZE);
+
+        return pos;
     }
 });
-
-
-//var SpritEnemyDie = Class(object,
-//                          {
-//                              onCreate: function (objectTag, strName) {
-//                                  var self = this;
-//                                  //gets componet
-//                                  //                                  var com = GetSubComponent(objectTag, strName);
-
-//                                  //                                  //gets GUI element
-//                                  //                                  var leftButton = com.getNodeByName("left");
-//                                  //                                  var rightButton = com.getNodeByName("right");
-//                                  //                                  var backButton = com.getNodeByName("back");
-
-//                                  //                                  //register callback function
-//                                  //                                  leftButton.onClick = function () {
-//                                  //                                      self.prev(self);
-//                                  //                                  }
-//                                  //                                  rightButton.onClick = function () {
-//                                  //                                      self.next(self);
-//                                  //                                  }
-//                                  //                                  backButton.onClick = function () {
-//                                  //                                      self.back(self);
-//                                  //                                  }
-//                                  print("!!!!!!!!!!!!");
-//                                  var sprites = CreateGameObjectFromTemplate("sprites");
-//                                  var aniEnemydie = sprites.getComponentJS("enemydie");
-//                                  aniEnemydie.action();
-//                              },
-//                              sceneOnEnter: function () {
-//                              },
-//                              sceneOnExit: function () {
-//                                  print("spriteenemydie exit");
-//                                  game.js_Game.removeSceneWithName("sprite_1");
-//                              }
-//                          });

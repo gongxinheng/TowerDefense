@@ -19,9 +19,7 @@
       <Filter>resource</Filter>
     </None>
     <None Include="..\Resources\main.js" />
-    <None Include="..\Resources\helloworld.json" />
     <None Include="..\Resources\helloworld.plist" />
-    <None Include="..\Resources\helloworld.js" />
     <None Include="..\Resources\class.js" />
     <None Include="..\Resources\Default.png">
       <Filter>resource</Filter>
@@ -67,6 +65,8 @@
     <None Include="..\Resources\sprites.json" />
     <None Include="..\Resources\guntower.json" />
     <None Include="..\Resources\guntower.plist" />
+    <None Include="..\Resources\gamemap.js" />
+    <None Include="..\Resources\gamemap.json" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TowerDefense.rc">
