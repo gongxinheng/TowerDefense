@@ -1,0 +1,48 @@
+{
+  "centeredOrigin": false,
+  "fileType": "SweetPomeII UIEditor",
+  "fileVersion": 1,
+  "nodeGraph": {
+    "children": [],
+    "class": "GUILayer",
+    "properties": {
+      "anchorPoint": [
+        0.5,
+        0.5
+      ],
+      "contentSize": [
+        480.0,
+        320.0
+      ],
+      "customClass": "RootLayer",
+      "touchEnabled": true,
+      "accelerometerEnabled": false,
+      "mouseEnabled": false,
+      "keyboardEnabled": true,
+      "actions": [],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "positionRelative": [
+        0.0,
+        0.0
+      ],
+      "bUseRelativePos": false,
+      "bAutoScale": false,
+      "scale": 1.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "rotation": 0.0,
+      "tag": -1,
+      "isRelativeAnchorPoint": false,
+      "visible": true,
+      "zOrder": 0,
+      "lockedScaleRatio": false,
+      "memberVarAssignmentName": "Node13",
+      "memberVarAssignmentType": 0
+    }
+  },
+  "stageHeight": 320.0,
+  "stageWidth": 480.0
+}

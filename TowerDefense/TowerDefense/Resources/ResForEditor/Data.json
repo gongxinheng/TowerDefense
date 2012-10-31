@@ -1,0 +1,12 @@
+{
+    "classname": "GameObject",
+    "x": 0,
+    "y": 0,
+    "script": "",
+    "components":
+    [
+       {
+          "classname": "Scene"
+       }
+    ]
+}

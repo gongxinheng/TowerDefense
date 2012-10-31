@@ -1,0 +1,26 @@
+{ 
+    "classname": "GameObject",
+    "x": 0, 				
+    "y": 0, 
+    "components": [ 		
+                   { 
+                   "classname": "Scene",	
+                   "scenename": "Logo"
+                   }
+                   ], 
+    "gameobjects": [
+                    {
+                    "classname": "GameObject",
+                    "x": 0, 
+                    "y": 0,
+                    "objecttag":10000,
+                    "components": [ 
+                                   { 
+                                   "classname": "GUIDataLayer",  
+                                   "file": "helloworld.plist",	      	
+                                   "name":"ui"
+                                   }
+                                   ]
+                    }
+                    ]
+}

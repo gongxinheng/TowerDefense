@@ -1,0 +1,47 @@
+{
+  "gameobjects": [
+    {
+      "gameobjects": [],
+      "components": [
+        {
+          "name": "Sprite",
+          "scale": 1,
+          "action": 0,
+          "rectpak": {
+            "x": 0,
+            "y": 0,
+            "width": 0,
+            "height": 0
+          },
+          "usebatchnode": 0,
+          "isbigimage": 1,
+          "enabletouch": 0,
+          "enableselfcollider": 0,
+          "file": "enemyDead.sprite",
+          "filetype": 2,
+          "classname": "Sprite"
+        }
+      ],
+      "zorder": 0,
+      "y": 284,
+      "x": 448,
+      "name": "GameObject",
+      "objecttag": -1,
+      "visible": 1,
+      "classname": "GameObject"
+    }
+  ],
+  "components": [
+    {
+      "scenename": "Scene",
+      "classname": "Scene"
+    }
+  ],
+  "zorder": 0,
+  "y": 0,
+  "x": 0,
+  "name": "GameObject",
+  "objecttag": -1,
+  "visible": 1,
+  "classname": "GameObject"
+}

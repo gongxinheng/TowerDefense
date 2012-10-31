@@ -1,0 +1,20 @@
+{ 
+    "sprites":
+                        {
+                        "classname": "GameObject",
+                        "x": 0,
+                        "y": 0,
+                        "objecttag":9001,
+                        "components": [
+                                       {
+                                       "classname": "Sprite",  //RenderComponent
+                                       "file": "enemyDead.sprite",        //对应的文件，动画编辑器提供
+                                       "name":"enemydie",
+									   "action": "0",
+									   "filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+                                       }
+                                       ]
+                        }
+}

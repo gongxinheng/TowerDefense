@@ -1,0 +1,54 @@
+{
+  "gameobjects": [
+    {
+      "gameobjects": [],
+      "components": [
+        {
+          "openclip": 0,
+          "cliprect": [],
+          "file": "",
+          "filetype": 0,
+          "x": 0.0,
+          "name": "GameMap",
+          "classname": "GameMap"
+        },
+        {
+          "multi": 0,
+          "name": "Input",
+          "classname": "Input"
+        }
+      ],
+      "zorder": 0,
+      "y": 334,
+      "x": 503,
+      "name": "backgroud",
+      "objecttag": 10001,
+      "visible": 1,
+      "classname": "GameObject"
+    },
+    {
+      "gameobjects": [],
+      "components": [],
+      "zorder": 1,
+      "y": 454,
+      "x": 526,
+      "name": "selectionframe",
+      "objecttag": 10002,
+      "visible": 1,
+      "classname": "GameObject"
+    }
+  ],
+  "components": [
+    {
+      "scenename": "Scene",
+      "classname": "Scene"
+    }
+  ],
+  "zorder": 0,
+  "y": 0,
+  "x": 0,
+  "name": "GameObject",
+  "objecttag": 10000,
+  "visible": 1,
+  "classname": "GameObject"
+}

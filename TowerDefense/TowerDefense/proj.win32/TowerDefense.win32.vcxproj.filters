@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="source">
+      <UniqueIdentifier>{0693c8a0-c031-4c1c-b307-4b1dcaee1cd4}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm</Extensions>
+    </Filter>
+    <Filter Include="include">
+      <UniqueIdentifier>{5de88075-c4d7-4537-86db-c76cbe76b91b}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc</Extensions>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{e6941ee4-1495-4d7c-9fd5-0833a8092106}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\TowerDefense.ico">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\main.js" />
+    <None Include="..\Resources\helloworld.json" />
+    <None Include="..\Resources\helloworld.plist" />
+    <None Include="..\Resources\helloworld.js" />
+    <None Include="..\Resources\class.js" />
+    <None Include="..\Resources\Default.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\crop.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\farm.jpg">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\land.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\menu2.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\Icon.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\dog.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\hello.lua" />
+    <None Include="..\Resources\hello2.lua" />
+    <None Include="..\Resources\menu1.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\background.mp3" />
+    <None Include="..\Resources\background3.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\effect1.wav" />
+    <None Include="..\Resources\close%402x.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\fps_images.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\fps_images-hd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\fps_images-ipadhd.png">
+      <Filter>resource</Filter>
+    </None>
+    <None Include="..\Resources\sprites.json" />
+    <None Include="..\Resources\guntower.json" />
+    <None Include="..\Resources\guntower.plist" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TowerDefense.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="main.h">
+      <Filter>include</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>include</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>source</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

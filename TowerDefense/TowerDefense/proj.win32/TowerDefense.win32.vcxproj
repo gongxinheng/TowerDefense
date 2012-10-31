@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BE55C9A6-6657-43E6-8DE9-51A510515E67}</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>..\..\..\SDK\win32\Debug</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>..\..\..\SDK\win32\Debug</OutDir>
+    <IntDir>$(Configuration).win32\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\SDK\SweetPomeII\libs;..\..\..\SDK\SweetPomeII\libs\cocos2dx;..\..\..\SDK\SweetPomeII\libs\cocos2dx\include;..\..\..\SDK\SweetPomeII\libs\cocos2dx\kazmath\include;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\win32;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32\OGLES;..\..\..\SDK\SweetPomeII\libs\cocos2dx\tileMap_parallax_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\script_support;..\..\..\SDK\SweetPomeII\libs\cocos2dx\touch_dispatcher;..\..\..\SDK\SweetPomeII\libs\cocos2dx\cocoa;..\..\..\SDK\SweetPomeII\libs\cocos2dx\layers_scenes_transitions_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\particle_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\textures;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32\zlib;..\..\..\SDK\SweetPomeII\libs\CocosDenshion\include;..\..\..\SDK\SweetPomeII\libs\cocos2dx\sprite_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\support;..\..\..\SDK\SweetPomeII\libs\Box2D\Common;..\..\..\SDK\SweetPomeII\libs\Box2D\Collision;..\..\..\SDK\SweetPomeII\libs\Box2D\Collision\Shapes;..\..\..\SDK\SweetPomeII\libs\Script\Spidermonkey\win32\include;..\..\..\SDK\SweetPomeII\libs\Script\Spidermonkey\JSBind;..\..\..\SDK\SweetPomeII\libs\OIS;..\..\..\SDK\SweetPomeII\libs\Json\json;..\..\..\SDK\SweetPomeII\libs\OpenAL.win32\include;..\..\..\SDK\SweetPomeII\include\;..\..\..\SDK\SweetPomeII\include\Platforms\Win32;..\..\..\SDK\SweetPomeII\include\Script;..\..\..\SDK\SweetPomeII\include\Platforms;..\..\..\SDK\SweetPomeII\include\Graphics;..\..\..\SDK\SweetPomeII\include\Physical\Collider;..\..\..\SDK\SweetPomeII\include\Input;..\..\..\SDK\SweetPomeII\include\Framework;..\..\..\SDK\SweetPomeII\include\ContentManager;..\..\..\SDK\SweetPomeII\include\Social;..\..\..\SDK\SweetPomeII\include\Network;..\..\..\SDK\SweetPomeII\include\GUI;..\..\..\SDK\SweetPomeII\include\IAP;..\..\..\SDK\SweetPomeII\include\File;..\..\..\SDK\SweetPomeII\include\DataAnalytics;..\..\..\SDK\SweetPomeII\include\Camera;..\..\..\SDK\SweetPomeII\include\Audio\OpenAL;..\..\..\SDK\SweetPomeII\include\Audio;..\..\..\SDK\SweetPomeII\include\AI;..\..\..\SDK\SweetPomeII\include\Advertise;..\..\..\SDK\SweetPomeII\include\Util;..\..\..\SDK\SweetPomeII\include\Components;..\..\..\SDK\SweetPomeII\include\BaseNode;..\..\..\SDK\SweetPomeII\include\Support;..\..\..\SDK\SweetPomeII\include\Script\js;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <MinimalRebuild>true</MinimalRebuild>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGS_DEBUG;COCOS2D_DEBUG=1;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\..\SDK\win32\Debug;..\..\..\SDK\SweetpomeII\libs\Script\Spidermonkey\win32\lib;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32\libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2dD.lib;SweetPomeIID.lib;js.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>TowerDefense.h</HeaderFileName>
+      <InterfaceIdentifierFileName>TowerDefense_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TowerDefense_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/TowerDefense.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\Classes;..\..\..\SDK\SweetPomeII\libs;..\..\..\SDK\SweetPomeII\libs\cocos2dx;..\..\..\SDK\SweetPomeII\libs\cocos2dx\include;..\..\..\SDK\SweetPomeII\libs\cocos2dx\kazmath\include;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\win32;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32\OGLES;..\..\..\SDK\SweetPomeII\libs\cocos2dx\tileMap_parallax_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\script_support;..\..\..\SDK\SweetPomeII\libs\cocos2dx\touch_dispatcher;..\..\..\SDK\SweetPomeII\libs\cocos2dx\cocoa;..\..\..\SDK\SweetPomeII\libs\cocos2dx\layers_scenes_transitions_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\particle_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\textures;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32\zlib;..\..\..\SDK\SweetPomeII\libs\CocosDenshion\include;..\..\..\SDK\SweetPomeII\libs\cocos2dx\sprite_nodes;..\..\..\SDK\SweetPomeII\libs\cocos2dx\support;..\..\..\SDK\SweetPomeII\libs\Box2D\Common;..\..\..\SDK\SweetPomeII\libs\Box2D\Collision;..\..\..\SDK\SweetPomeII\libs\Box2D\Collision\Shapes;..\..\..\SDK\SweetPomeII\libs\Script\Spidermonkey\win32\include;..\..\..\SDK\SweetPomeII\libs\Script\Spidermonkey\JSBind;..\..\..\SDK\SweetPomeII\libs\OIS;..\..\..\SDK\SweetPomeII\libs\Json\json;..\..\..\SDK\SweetPomeII\libs\OpenAL.win32\include;..\..\..\SDK\SweetPomeII\include\;..\..\..\SDK\SweetPomeII\include\Platforms\Win32;..\..\..\SDK\SweetPomeII\include\Script;..\..\..\SDK\SweetPomeII\include\Platforms;..\..\..\SDK\SweetPomeII\include\Graphics;..\..\..\SDK\SweetPomeII\include\Physical\Collider;..\..\..\SDK\SweetPomeII\include\Input;..\..\..\SDK\SweetPomeII\include\Framework;..\..\..\SDK\SweetPomeII\include\ContentManager;..\..\..\SDK\SweetPomeII\include\Social;..\..\..\SDK\SweetPomeII\include\Network;..\..\..\SDK\SweetPomeII\include\GUI;..\..\..\SDK\SweetPomeII\include\IAP;..\..\..\SDK\SweetPomeII\include\File;..\..\..\SDK\SweetPomeII\include\DataAnalytics;..\..\..\SDK\SweetPomeII\include\Camera;..\..\..\SDK\SweetPomeII\include\Audio\OpenAL;..\..\..\SDK\SweetPomeII\include\Audio;..\..\..\SDK\SweetPomeII\include\AI;..\..\..\SDK\SweetPomeII\include\Advertise;..\..\..\SDK\SweetPomeII\include\Util;..\..\..\SDK\SweetPomeII\include\Components;..\..\..\SDK\SweetPomeII\include\BaseNode;..\..\..\SDK\SweetPomeII\include\Support;..\..\..\SDK\SweetPomeII\include\Script\js;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_CRT_SECURE_NO_WARNINGS;_SCL_SECURE_NO_WARNINGSNDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DisableSpecificWarnings>4267;4251;4244;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <AdditionalLibraryDirectories>$(OutDir);..\..\..\SDK\win32\Debug;..\..\..\SDK\SweetpomeII\libs\Script\Spidermonkey\win32\lib;..\..\..\SDK\SweetPomeII\libs\cocos2dx\platform\third_party\win32\libraries;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>libcocos2dD.lib;SweetPomeIID.lib;js.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <HeaderFileName>TowerDefense.h</HeaderFileName>
+      <InterfaceIdentifierFileName>TowerDefense_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>TowerDefense_p.c</ProxyFileName>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)/TowerDefense.tlb</TypeLibraryName>
+      <DllDataFileName>
+      </DllDataFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="..\Resources\background.mp3" />
+    <None Include="..\Resources\background3.png" />
+    <None Include="..\Resources\class.js" />
+    <None Include="..\Resources\close%402x.png" />
+    <None Include="..\Resources\crop.png" />
+    <None Include="..\Resources\Default.png" />
+    <None Include="..\Resources\dog.png" />
+    <None Include="..\Resources\effect1.wav" />
+    <None Include="..\Resources\farm.jpg" />
+    <None Include="..\Resources\fps_images-hd.png" />
+    <None Include="..\Resources\fps_images-ipadhd.png" />
+    <None Include="..\Resources\fps_images.png" />
+    <None Include="..\Resources\guntower.json" />
+    <None Include="..\Resources\guntower.plist" />
+    <None Include="..\Resources\hello.lua" />
+    <None Include="..\Resources\hello2.lua" />
+    <None Include="..\Resources\helloworld.js" />
+    <None Include="..\Resources\helloworld.json" />
+    <None Include="..\Resources\helloworld.plist" />
+    <None Include="..\Resources\Icon.png" />
+    <None Include="..\Resources\land.png" />
+    <None Include="..\Resources\main.js" />
+    <None Include="..\Resources\menu1.png" />
+    <None Include="..\Resources\menu2.png" />
+    <None Include="..\Resources\sprites.json" />
+    <None Include="res\TowerDefense.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TowerDefense.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Classes\AppDelegate.h" />
+    <ClInclude Include="main.h" />
+    <ClInclude Include="resource.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\Classes\AppDelegate.cpp" />
+    <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
