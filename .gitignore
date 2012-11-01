@@ -161,3 +161,7 @@ pip-log.txt
 
 # Mac crap
 .DS_Store
+
+TowerDefense/TowerDefense/proj.win32/Debug.win32/TowerDefense.win32.log
+
+*.log
