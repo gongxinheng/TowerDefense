@@ -13,14 +13,18 @@
       <UniqueIdentifier>{e6941ee4-1495-4d7c-9fd5-0833a8092106}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;jpg;jpeg;jpe;png;manifest</Extensions>
     </Filter>
+    <Filter Include="js">
+      <UniqueIdentifier>{d5f9a96c-cc72-4ef6-9c85-bdeb8769df0e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="js\UI">
+      <UniqueIdentifier>{986734a8-1857-4318-839f-a6f3f55bdead}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\TowerDefense.ico">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\main.js" />
     <None Include="..\Resources\helloworld.plist" />
-    <None Include="..\Resources\class.js" />
     <None Include="..\Resources\Default.png">
       <Filter>resource</Filter>
     </None>
@@ -65,8 +69,19 @@
     <None Include="..\Resources\sprites.json" />
     <None Include="..\Resources\guntower.json" />
     <None Include="..\Resources\guntower.plist" />
-    <None Include="..\Resources\gamemap.js" />
     <None Include="..\Resources\gamemap.json" />
+    <None Include="..\Resources\gamemap.js">
+      <Filter>js</Filter>
+    </None>
+    <None Include="..\Resources\main.js">
+      <Filter>js</Filter>
+    </None>
+    <None Include="..\Resources\class.js">
+      <Filter>js</Filter>
+    </None>
+    <None Include="..\resources\uibuild.js">
+      <Filter>js\UI</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TowerDefense.rc">

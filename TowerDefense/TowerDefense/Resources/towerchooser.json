@@ -1,0 +1,701 @@
+{
+  "centeredOrigin": false,
+  "fileType": "SweetPomeII UIEditor",
+  "fileVersion": 1,
+  "nodeGraph": {
+    "children": [
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_gunTower.png",
+              "a1_spriteFileNormal": "build_gunTower.png",
+              "a2_spriteFileSelected": "build_gunTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent14",
+              "actions": [],
+              "position": [
+                180.0,
+                755.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                20.0,
+                20.0
+              ],
+              "anchorPoint": [
+                1.0,
+                1.0
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1001,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 111,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnGunTower",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "position": [
+            0.0,
+            0.0
+          ],
+          "positionRelative": [
+            0.0,
+            0.0
+          ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            1.0,
+            1.0
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": 1000,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 100,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "BtnContainer",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_flyBulletTower.png",
+              "a1_spriteFileNormal": "build_flyBulletTower.png",
+              "a2_spriteFileSelected": "build_flyBulletTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent16",
+              "actions": [],
+              "position": [
+                148.0,
+                755.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                20.0,
+                20.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1002,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 111,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnFlyBulletTower",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "position": [
+            64.0,
+            0.0
+          ],
+          "positionRelative": [
+            0.2,
+            0.0
+          ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            1.0,
+            1.0
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 100,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "BtnContainer1",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUILabelTTF",
+        "properties": {
+          "position": [
+            164.0,
+            467.0
+          ],
+          "positionRelative": [
+            0.5125,
+            0.934
+          ],
+          "fontSize": 14,
+          "fontName": 0,
+          "labelText": "",
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteSheet": "",
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": 1203,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 2,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "textDesc",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemLabel",
+            "properties": {
+              "fontSize": 14,
+              "fontName": 0,
+              "labelText": "防御塔建造",
+              "color": [
+                121,
+                106,
+                227
+              ],
+              "disabledColor": [
+                110,
+                108,
+                144
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent19",
+              "actions": [],
+              "position": [
+                -27.0,
+                -24.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                77.01,
+                30.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1201,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 3,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnTowerPage",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "position": [
+            204.0,
+            817.0
+          ],
+          "positionRelative": [
+            0.6375,
+            1.634
+          ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": 1200,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 1,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node20",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUISprite",
+        "properties": {
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteFile": "Default.png",
+          "spriteSheet": "",
+          "actions": [],
+          "position": [
+            160.0,
+            371.0
+          ],
+          "positionRelative": [
+            0.5,
+            0.742
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            320.0,
+            480.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node21",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemLabel",
+            "properties": {
+              "fontSize": 14,
+              "fontName": 0,
+              "labelText": "升级科技",
+              "color": [
+                132,
+                126,
+                243
+              ],
+              "disabledColor": [
+                58,
+                125,
+                231
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent22",
+              "actions": [],
+              "position": [
+                -30.0,
+                -30.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                96.0,
+                50.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1202,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 3,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "Node22",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "position": [
+            393.0,
+            817.0
+          ],
+          "positionRelative": [
+            1.228125,
+            1.634
+          ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 2,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node23",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "",
+              "a1_spriteFileNormal": "menuItemBg.png",
+              "a2_spriteFileSelected": "",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent24",
+              "actions": [],
+              "position": [
+                -17.0,
+                -25.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                62.0,
+                34.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1301,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 3,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnOK",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "position": [
+            230.0,
+            348.0
+          ],
+          "positionRelative": [
+            0.71875,
+            0.696
+          ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node25",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "",
+              "a1_spriteFileNormal": "close@2x.png",
+              "a2_spriteFileSelected": "",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent26",
+              "actions": [],
+              "position": [
+                -14.0,
+                -25.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                62.0,
+                34.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1302,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 3,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnCancel",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "position": [
+            361.0,
+            348.0
+          ],
+          "positionRelative": [
+            1.128125,
+            0.696
+          ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node27",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      }
+    ],
+    "class": "GUILayer",
+    "properties": {
+      "anchorPoint": [
+        0.5,
+        0.5
+      ],
+      "contentSize": [
+        320.0,
+        500.0
+      ],
+      "customClass": "RootLayer",
+      "touchEnabled": true,
+      "accelerometerEnabled": false,
+      "mouseEnabled": false,
+      "keyboardEnabled": true,
+      "actions": [],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "positionRelative": [
+        0.0,
+        0.0
+      ],
+      "bUseRelativePos": false,
+      "bAutoScale": false,
+      "scale": 1.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "rotation": 0.0,
+      "tag": 1000,
+      "isRelativeAnchorPoint": true,
+      "visible": true,
+      "zOrder": 0,
+      "lockedScaleRatio": false,
+      "memberVarAssignmentName": "Node13",
+      "memberVarAssignmentType": 0
+    }
+  },
+  "stageHeight": 500.0,
+  "stageWidth": 320.0
+}

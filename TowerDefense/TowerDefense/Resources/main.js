@@ -37,6 +37,7 @@ var GameJS = Class(object,
                        loadJS: function () {
                            print("require js");
                            Require("gamemap.js");
+                           Require("uibuild.js");
                            print("require js over");
                        },
                        frame: function () {

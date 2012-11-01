@@ -64,6 +64,23 @@
       "objecttag": 10002,
       "visible": 1,
       "classname": "GameObject"
+    },
+    {
+      "gameobjects": [],
+      "components": [
+        {
+          "file": "towerchooser.plist",
+          "name": "UITowerChooser",
+          "classname": "GUIDataLayer"
+        }
+      ],
+      "zorder": 10,
+      "y": 566,
+      "x": 223,
+      "name": "UITowerChooser",
+      "objecttag": 15000,
+      "visible": 0,
+      "classname": "GameObject"
     }
   ],
   "components": [
@@ -76,7 +93,7 @@
   "y": 0,
   "x": 0,
   "name": "GameObject",
-  "objecttag": -1,
+  "objecttag": 10000,
   "visible": 1,
   "classname": "GameObject"
 }
