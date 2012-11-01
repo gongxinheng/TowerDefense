@@ -26,6 +26,7 @@ var GameJS = Class(object,
                            this.js_Game.update = this.frame;
                            LoadGameObjectTemplateFile("sprites.json");
                            LoadGameObjectTemplateFile("towers.json");
+                           LoadGameObjectTemplateFile("selectedFrameAni.json");
                            print("init main js over");
                        },
 

@@ -39,7 +39,7 @@
 								<key>lockedScaleRatio</key>
 								<false />
 								<key>memberVarAssignmentName</key>
-								<string>btnGunTower</string>
+								<string>btnTower0</string>
 								<key>memberVarAssignmentType</key>
 								<integer>0</integer>
 								<key>position</key>
@@ -186,12 +186,12 @@
 								<key>lockedScaleRatio</key>
 								<false />
 								<key>memberVarAssignmentName</key>
-								<string>btnFlyBulletTower</string>
+								<string>btnTower1</string>
 								<key>memberVarAssignmentType</key>
 								<integer>0</integer>
 								<key>position</key>
 								<array>
-									<real>148</real>
+									<real>149</real>
 									<real>755</real>
 								</array>
 								<key>positionRelative</key>
@@ -341,7 +341,7 @@
 						<key>positionRelative</key>
 						<array>
 							<real>0.512499988079071</real>
-							<real>0.934000015258789</real>
+							<real>0.972916662693024</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -409,8 +409,8 @@
 								</array>
 								<key>contentSize</key>
 								<array>
-									<real>77.0100021362305</real>
-									<real>30</real>
+									<real>0</real>
+									<real>0</real>
 								</array>
 								<key>customClass</key>
 								<string></string>
@@ -509,7 +509,7 @@
 						<key>positionRelative</key>
 						<array>
 							<real>0.637499988079071</real>
-							<real>1.63399994373322</real>
+							<real>1.70208334922791</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -576,7 +576,7 @@
 						<key>positionRelative</key>
 						<array>
 							<real>0.5</real>
-							<real>0.741999983787537</real>
+							<real>0.772916674613953</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -638,8 +638,8 @@
 								</array>
 								<key>contentSize</key>
 								<array>
-									<real>96</real>
-									<real>50</real>
+									<real>0</real>
+									<real>0</real>
 								</array>
 								<key>customClass</key>
 								<string></string>
@@ -738,7 +738,7 @@
 						<key>positionRelative</key>
 						<array>
 							<real>1.22812497615814</real>
-							<real>1.63399994373322</real>
+							<real>1.70208334922791</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -885,7 +885,7 @@
 						<key>positionRelative</key>
 						<array>
 							<real>0.71875</real>
-							<real>0.695999979972839</real>
+							<real>0.725000023841858</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1032,7 +1032,7 @@
 						<key>positionRelative</key>
 						<array>
 							<real>1.12812495231628</real>
-							<real>0.695999979972839</real>
+							<real>0.725000023841858</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1077,7 +1077,7 @@
 				<key>contentSize</key>
 				<array>
 					<real>320</real>
-					<real>500</real>
+					<real>480</real>
 				</array>
 				<key>customClass</key>
 				<string>RootLayer</string>
@@ -1130,7 +1130,7 @@
 			</dict>
 		</dict>
 		<key>stageHeight</key>
-		<integer>500</integer>
+		<integer>480</integer>
 		<key>stageWidth</key>
 		<integer>320</integer>
 	</dict>

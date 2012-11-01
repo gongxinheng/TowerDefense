@@ -19,6 +19,9 @@
     <Filter Include="js\UI">
       <UniqueIdentifier>{986734a8-1857-4318-839f-a6f3f55bdead}</UniqueIdentifier>
     </Filter>
+    <Filter Include="json">
+      <UniqueIdentifier>{47477fa8-b8fa-479a-a273-a0ace0becd15}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\TowerDefense.ico">
@@ -66,10 +69,7 @@
     <None Include="..\Resources\fps_images-ipadhd.png">
       <Filter>resource</Filter>
     </None>
-    <None Include="..\Resources\sprites.json" />
-    <None Include="..\Resources\guntower.json" />
     <None Include="..\Resources\guntower.plist" />
-    <None Include="..\Resources\gamemap.json" />
     <None Include="..\Resources\gamemap.js">
       <Filter>js</Filter>
     </None>
@@ -81,6 +81,18 @@
     </None>
     <None Include="..\resources\uibuild.js">
       <Filter>js\UI</Filter>
+    </None>
+    <None Include="..\Resources\guntower.json">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\Resources\gamemap.json">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\Resources\sprites.json">
+      <Filter>json</Filter>
+    </None>
+    <None Include="..\Resources\selectedFrame.json">
+      <Filter>json</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

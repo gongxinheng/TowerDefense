@@ -1,0 +1,20 @@
+{ 
+    "selectedFrameAni":
+                        {
+                        "classname": "GameObject",
+                        "x": 0,
+                        "y": 0,
+                        "objecttag":8888,
+                        "components": [
+                                       {
+                                       "classname": "Sprite",  //RenderComponent
+                                       "file": "selectedFrameAni.sprite",        //对应的文件，动画编辑器提供
+                                       "name":"selectedFrameAni",
+									   "action": "0",
+									   "filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+                                       }
+                                       ]
+                        }
+}

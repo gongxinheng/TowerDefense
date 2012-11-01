@@ -64,7 +64,6 @@ var gamemap = Class(object, {
 
         pos.x = 300;
         pos.y = 300;
-        print(this.uiTowerChooser);
         this.uiBuild.setPosition(pos);
         this.uiBuild.setVisible(true);
     },

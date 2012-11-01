@@ -144,6 +144,7 @@
     <None Include="..\Resources\main.js" />
     <None Include="..\Resources\menu1.png" />
     <None Include="..\Resources\menu2.png" />
+    <None Include="..\Resources\selectedFrame.json" />
     <None Include="..\Resources\sprites.json" />
     <None Include="..\resources\uibuild.js" />
     <None Include="res\TowerDefense.ico" />
