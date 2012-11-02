@@ -56,7 +56,13 @@ var uibuild = Class(object, {
         var pos = new GLKVector4();
         pos.x = 100;
         pos.y = 100;
+<<<<<<< HEAD
         this.selectedframeAni.setPosition(pos); //this.arrayBtnTower[type].getX());
+=======
+        print(this.arrayBtnTower[type]);
+        print("xxx=" + this.arrayBtnTower[type].getPositionX());
+        //this.selectedframeAni.setPosition(  );
+>>>>>>> Change architecture
         //print(this.selectedframeAni);
     }
 });

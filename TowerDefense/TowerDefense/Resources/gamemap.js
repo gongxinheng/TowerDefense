@@ -15,7 +15,6 @@ var gamemap = Class(object, {
         print("!!!!!!!!!!!!");
         var root = GetRootGameObj();
         this.sprites = CreateGameObjectFromTemplate("sprites");
-        this.towers = CreateGameObjectFromTemplate("towers");      // ËþÍ¼Æ¬
         this.selectionframe = GetSubComponent(10002, "selection");
 
         this.uiBuild = new uibuild(15000);
@@ -49,16 +48,10 @@ var gamemap = Class(object, {
     singleTouchPressed: function (x, y) {
         print("x=" + x + "y=" + y);
         var root = GetRootGameObj();
-        //        print("ccccccccccc");
-        //        var towers = CreateGameObjectFromTemplate("towers");
-        //        var tower = towers.getComponentJS("guntower");
-        //        print(tower);
-        //        tower.setAction(0);
         var tilepos = this.calcTilePos(x, y);
         var pos = new GLKVector4();
         pos.x = tilepos["x"] * TILESIZE + TILESIZE / 2;
         pos.y = tilepos["y"] * TILESIZE + TILESIZE / 2;
-        print("x1=" + tilepos["x"] + "y1=" + tilepos["y"]);
         this.selectionframe.setVisible(true);
         this.selectionframe.setPosition(pos);
 
