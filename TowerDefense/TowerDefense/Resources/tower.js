@@ -1,48 +1,47 @@
 /**
- * ç‚®å¡”åŸºç±»
- * @author é¾šæ¬£æ’
+ * ÅÚËş»ùÀà
+ * @author ¹¨ĞÀºã
  *
  */
-var MAXAP = 100;	//æœ€å¤§æ”»å‡»åŠ›
-var MAXRANGE = 5;	//æœ€å¤§å°„ç¨‹
-var MAXSHOOTSPEED = 3;	//æœ€å¤§å°„é€Ÿ
-var MAXLEVEL = 3; // æœ€é«˜ç­‰çº§
-var TOWERHASDIRECTIONCOUNT = 3; // æœ‰æ–¹å‘çš„ç‚®å¡”æ•°é‡
-var IDCOUNTER = 5; 	//å½“å‰IDå·
+var MAXAP = 100;	//×î´ó¹¥»÷Á¦
+var MAXRANGE = 5;	//×î´óÉä³Ì
+var MAXSHOOTSPEED = 3;	//×î´óÉäËÙ
+var MAXLEVEL = 3; // ×î¸ßµÈ¼¶
+var TOWERHASDIRECTIONCOUNT = 3; // ÓĞ·½ÏòµÄÅÚËşÊıÁ¿
 
-var tower = Class(object, {
-    onCreate: function (type) {	    
-	    this.ID = ++IDCOUNTER; //å®é™…IDå·
-	    this.type = type; // ç‚®å¡”ç±»å‹
+var Tower = Class(object, {
+    onCreate: function (id, type) {
+        this.ID = id; //Êµ¼ÊIDºÅ
+        this.type = type; // ÅÚËşÀàĞÍ
 
-	    this.strName = "ç‚®å¡”";	//ç‚®å¡”å
-	    this.strIntroduce = "ä¸€åº§ç‚®å¡”"; //ä»‹ç»
-	    this.ap = 0; //æ”»å‡»åŠ›
-	    this.range = 0; //å°„ç¨‹
-	    this.rangeRadius = 0; //æ”»å‡»èŒƒå›´åŠå¾„
-	    this.price = 0; //ä»·æ ¼
-	    this.shootSpeed = 0; //å°„é€Ÿ
-	    this.level = 1; //çº§åˆ«
-	    this.hasDirection = false; // æ˜¯å¦æœ‰æ–¹å‘
-	    this.isSpecial = false; // æ˜¯å¦ç‰¹æ®Š
+        this.strName = ""; //ÅÚËşÃû
+        this.strIntroduce = ""; //½éÉÜ
+        this.ap = 0; //¹¥»÷Á¦
+        this.range = 0; //Éä³Ì
+        this.rangeRadius = 0; //¹¥»÷·¶Î§°ë¾¶
+        this.price = 0; //¼Û¸ñ
+        this.shootSpeed = 0; //ÉäËÙ
+        this.level = 1; //¼¶±ğ
+        this.hasDirection = false; // ÊÇ·ñÓĞ·½Ïò
+        this.isSpecial = false; // ÊÇ·ñÌØÊâ
     },
+
+    /**
+    * »ñÈ¡IDºÅ
+    */
+    getID: function () {
+        return this.ID;
+    }
+});
 	
 	/**
-	 * è·å–IDå·
-	 */
-	getID: function() {
-		return this.ID;
-	}
-}
-	
-	/**
-	 * è·å–ç‚®å¡”å‡çº§ä¿¡æ¯
-	 * @param tower è¦å‡çº§çš„å¡”
-	 * @param upInfo å­˜æ”¾å‡çº§çš„ä¿¡æ¯
+	 * »ñÈ¡ÅÚËşÉı¼¶ĞÅÏ¢
+	 * @param tower ÒªÉı¼¶µÄËş
+	 * @param upInfo ´æ·ÅÉı¼¶µÄĞÅÏ¢
 	 */
 //	public static void getUpgradeInfo(RealTower tower, UpgradeInfo upInfo) {
 //		
-//		// å·²è¾¾åˆ°æœ€é«˜çº§åˆ«ï¼Œè¿”å›å¤±è´¥
+//		// ÒÑ´ïµ½×î¸ß¼¶±ğ£¬·µ»ØÊ§°Ü
 //		if (tower.level + 1 > RealTower.MAXLEVEL) {
 //			upInfo.level = 4;
 //			return;
@@ -54,72 +53,72 @@ var tower = Class(object, {
 //				upInfo.level = 2;
 //				switch (tower.type) {
 //				case GameInfo.TOWER_GUN: {
-//					upInfo.strName = "2çº§æ ¼æ—æªå¡”";
-//					upInfo.ap = 20; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 2; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 10; // å‡çº§çš„ä»·æ ¼
-//					upInfo.rangeRadius = 35; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶¸ñÁÖÇ¹Ëş";
+//					upInfo.ap = 20; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 2; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 10; // Éı¼¶µÄ¼Û¸ñ
+//					upInfo.rangeRadius = 35; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_NORMAL: {
-//					upInfo.strName = "2çº§æ™®é€šç‚®å¡”";
-//					upInfo.ap = 25; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 2; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 15; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 35; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶ÆÕÍ¨ÅÚËş";
+//					upInfo.ap = 25; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 2; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 15; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 35; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_FLYBULLET: {
-//					upInfo.strName = "2çº§é£å¼¹å¡”";
-//					upInfo.ap = 25; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 3; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 15; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 45; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶·Éµ¯Ëş";
+//					upInfo.ap = 25; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 3; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 15; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 45; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_FIREBULLET: {
-//					upInfo.strName = "2çº§ç«ç„°å¼¹å¡”";
-//					upInfo.ap = 40; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 3; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 1; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 40; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 45; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶»ğÑæµ¯Ëş";
+//					upInfo.ap = 40; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 3; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 1; // ËşµÄÉäËÙ
+//					upInfo.price = 40; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 45; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_ICETOWER: {
-//					upInfo.strName = "2çº§å†·å†»å…‰å¡”";
-//					upInfo.ap = 20; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 2; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 1; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 40; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 35; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶Àä¶³¹âËş";
+//					upInfo.ap = 20; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 2; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 1; // ËşµÄÉäËÙ
+//					upInfo.price = 40; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 35; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_ELECTRIC: {
-//					upInfo.strName = "2çº§é˜²å¾¡ç”µå¡”";
-//					upInfo.ap = 40; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 2; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 40; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 35; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶·ÀÓùµçËş";
+//					upInfo.ap = 40; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 2; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 40; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 35; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_FINALTOWER: {
-//					upInfo.strName = "2çº§ç»ˆæç‚®å¡”";
-//					upInfo.ap = 80; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 4; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 1; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 80; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 50; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "2¼¶ÖÕ¼«ÅÚËş";
+//					upInfo.ap = 80; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 4; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 1; // ËşµÄÉäËÙ
+//					upInfo.price = 80; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 50; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
@@ -131,72 +130,72 @@ var tower = Class(object, {
 //				upInfo.level = 3;
 //				switch (tower.type) {
 //				case GameInfo.TOWER_GUN: {
-//					upInfo.strName = "3çº§æ ¼æ—æªå¡”";
-//					upInfo.ap = 30; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 3; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 3; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 15; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 50; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶¸ñÁÖÇ¹Ëş";
+//					upInfo.ap = 30; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 3; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 3; // ËşµÄÉäËÙ
+//					upInfo.price = 15; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 50; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_NORMAL: {
-//					upInfo.strName = "3çº§æ™®é€šç‚®å¡”";
-//					upInfo.ap = 40; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 3; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 25; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 45; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶ÆÕÍ¨ÅÚËş";
+//					upInfo.ap = 40; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 3; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 25; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 45; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_FLYBULLET: {
-//					upInfo.strName = "3çº§é£å¼¹å¡”";
-//					upInfo.ap = 33; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 4; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 25; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 50; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶·Éµ¯Ëş";
+//					upInfo.ap = 33; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 4; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 25; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 50; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_FIREBULLET: {
-//					upInfo.strName = "3çº§ç«ç„°å¼¹å¡”";
-//					upInfo.ap = 60; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 4; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 50; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 50; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶»ğÑæµ¯Ëş";
+//					upInfo.ap = 60; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 4; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 50; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 50; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_ICETOWER: {
-//					upInfo.strName = "3çº§å†·å†»å…‰å¡”";
-//					upInfo.ap = 35; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 3; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 60; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 45; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶Àä¶³¹âËş";
+//					upInfo.ap = 35; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 3; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 60; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 45; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_ELECTRIC: {
-//					upInfo.strName = "3çº§é˜²å¾¡ç”µå¡”";
-//					upInfo.ap = 50; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 2; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 50; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 35; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶·ÀÓùµçËş";
+//					upInfo.ap = 50; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 2; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 50; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 35; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
 //				case GameInfo.TOWER_FINALTOWER: {
-//					upInfo.strName = "3çº§ç»ˆæç‚®å¡”";
-//					upInfo.ap = 100; // å¡”çš„æ”»å‡»åŠ›
-//					upInfo.range = 5; // å¡”çš„å°„ç¨‹
-//					upInfo.shootSpeed = 2; // å¡”çš„å°„é€Ÿ
-//					upInfo.price = 99; // å¡”çš„ä»·æ ¼
-//					upInfo.rangeRadius = 60; //å°„ç¨‹åŠå¾„
+//					upInfo.strName = "3¼¶ÖÕ¼«ÅÚËş";
+//					upInfo.ap = 100; // ËşµÄ¹¥»÷Á¦
+//					upInfo.range = 5; // ËşµÄÉä³Ì
+//					upInfo.shootSpeed = 2; // ËşµÄÉäËÙ
+//					upInfo.price = 99; // ËşµÄ¼Û¸ñ
+//					upInfo.rangeRadius = 60; //Éä³Ì°ë¾¶
 //				}
 //					break;
 
@@ -211,31 +210,31 @@ var tower = Class(object, {
 //	}
 //	
 //	/**
-//	 * ç›´æ¥å‡çº§
+//	 * Ö±½ÓÉı¼¶
 //	 */
 //	public static void dirUpgrade(RealTower tower, UpgradeInfo upInfo) {
-//		tower.level = upInfo.level; // å‡çº§
-//		tower.ap = upInfo.ap; // å¡”çš„æ”»å‡»åŠ›
-//		tower.range = upInfo.range; // å¡”çš„å°„ç¨‹
-//		tower.shootSpeed = upInfo.shootSpeed; // å¡”çš„å°„é€Ÿ
-//		tower.price += upInfo.price; // å¡”çš„ä»·æ ¼
-//		tower.rangeRadius = upInfo.rangeRadius; //å°„ç¨‹åŠå¾„
+//		tower.level = upInfo.level; // Éı¼¶
+//		tower.ap = upInfo.ap; // ËşµÄ¹¥»÷Á¦
+//		tower.range = upInfo.range; // ËşµÄÉä³Ì
+//		tower.shootSpeed = upInfo.shootSpeed; // ËşµÄÉäËÙ
+//		tower.price += upInfo.price; // ËşµÄ¼Û¸ñ
+//		tower.rangeRadius = upInfo.rangeRadius; //Éä³Ì°ë¾¶
 //	}
 //	
 //	public static boolean upgrade(RealTower tower, UpgradeInfo upInfo) {
-//		// é‡‘å¸ä¸å¤Ÿ
+//		// ½ğ±Ò²»¹»
 //		if (GameInfo.gold - upInfo.price < 0 || upInfo.level > 3) {
 //			return false;
 //		}
-//		// å‡çº§æˆåŠŸ
+//		// Éı¼¶³É¹¦
 //		else {
-//			tower.level = upInfo.level; // å‡çº§
-//			tower.ap = upInfo.ap; // å¡”çš„æ”»å‡»åŠ›
-//			tower.range = upInfo.range; // å¡”çš„å°„ç¨‹
-//			tower.shootSpeed = upInfo.shootSpeed; // å¡”çš„å°„é€Ÿ
-//			tower.price += upInfo.price; // å¡”çš„ä»·æ ¼
-//			tower.rangeRadius = upInfo.rangeRadius; //å°„ç¨‹åŠå¾„
-//			GameInfo.gold -= upInfo.price; // å‡å°‘é‡‘å¸
+//			tower.level = upInfo.level; // Éı¼¶
+//			tower.ap = upInfo.ap; // ËşµÄ¹¥»÷Á¦
+//			tower.range = upInfo.range; // ËşµÄÉä³Ì
+//			tower.shootSpeed = upInfo.shootSpeed; // ËşµÄÉäËÙ
+//			tower.price += upInfo.price; // ËşµÄ¼Û¸ñ
+//			tower.rangeRadius = upInfo.rangeRadius; //Éä³Ì°ë¾¶
+//			GameInfo.gold -= upInfo.price; // ¼õÉÙ½ğ±Ò
 //			return true;
 //		}
 //	}

@@ -16,11 +16,17 @@
     <Filter Include="js">
       <UniqueIdentifier>{d5f9a96c-cc72-4ef6-9c85-bdeb8769df0e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="js\UI">
-      <UniqueIdentifier>{986734a8-1857-4318-839f-a6f3f55bdead}</UniqueIdentifier>
-    </Filter>
     <Filter Include="json">
       <UniqueIdentifier>{47477fa8-b8fa-479a-a273-a0ace0becd15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="js\Model">
+      <UniqueIdentifier>{05d878b8-b47c-4d03-b940-7fdca5258341}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="js\View">
+      <UniqueIdentifier>{986734a8-1857-4318-839f-a6f3f55bdead}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="js\Controller">
+      <UniqueIdentifier>{627ea4e3-8e60-4784-ae9d-60c5023bb761}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -70,9 +76,6 @@
       <Filter>resource</Filter>
     </None>
     <None Include="..\Resources\guntower.plist" />
-    <None Include="..\Resources\gamemap.js">
-      <Filter>js</Filter>
-    </None>
     <None Include="..\Resources\main.js">
       <Filter>js</Filter>
     </None>
@@ -80,7 +83,7 @@
       <Filter>js</Filter>
     </None>
     <None Include="..\resources\uibuild.js">
-      <Filter>js\UI</Filter>
+      <Filter>js\View</Filter>
     </None>
     <None Include="..\Resources\guntower.json">
       <Filter>json</Filter>
@@ -93,6 +96,24 @@
     </None>
     <None Include="..\Resources\selectedFrame.json">
       <Filter>json</Filter>
+    </None>
+    <None Include="..\Resources\tower.js">
+      <Filter>js\Model</Filter>
+    </None>
+    <None Include="..\Resources\towerrender.js">
+      <Filter>js\View</Filter>
+    </None>
+    <None Include="..\Resources\gameworld.js">
+      <Filter>js\Model</Filter>
+    </None>
+    <None Include="..\Resources\gamemap.js">
+      <Filter>js\View</Filter>
+    </None>
+    <None Include="..\Resources\gamecontroller.js">
+      <Filter>js\Controller</Filter>
+    </None>
+    <None Include="..\Resources\enemy.js">
+      <Filter>js\Model</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

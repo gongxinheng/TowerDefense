@@ -130,10 +130,12 @@
     <None Include="..\Resources\Default.png" />
     <None Include="..\Resources\dog.png" />
     <None Include="..\Resources\effect1.wav" />
+    <None Include="..\Resources\enemy.js" />
     <None Include="..\Resources\farm.jpg" />
     <None Include="..\Resources\fps_images-hd.png" />
     <None Include="..\Resources\fps_images-ipadhd.png" />
     <None Include="..\Resources\fps_images.png" />
+    <None Include="..\Resources\gameworld.js" />
     <None Include="..\Resources\gamemap.js" />
     <None Include="..\Resources\gamemap.json" />
     <None Include="..\Resources\guntower.json" />
@@ -146,6 +148,9 @@
     <None Include="..\Resources\menu2.png" />
     <None Include="..\Resources\selectedFrame.json" />
     <None Include="..\Resources\sprites.json" />
+    <None Include="..\Resources\tower.js" />
+    <None Include="..\Resources\gamecontroller.js" />
+    <None Include="..\Resources\towerrender.js" />
     <None Include="..\resources\uibuild.js" />
     <None Include="res\TowerDefense.ico" />
   </ItemGroup>

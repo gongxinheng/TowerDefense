@@ -4,7 +4,7 @@
                         "classname": "GameObject",
                         "x": 0,
                         "y": 0,
-                        "objecttag":9001,
+                        "objecttag":9000,
                         "components": [
                                        {
                                        "classname": "Sprite",  //RenderComponent
@@ -16,5 +16,24 @@
 										"usebatchnode":1
                                        }
                                        ]
-                        }
+                        },
+
+		"spritetower0":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9003,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "guntower.sprite",        //对应的文件，动画编辑器提供
+										"name":"spritetower0",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						}
 }

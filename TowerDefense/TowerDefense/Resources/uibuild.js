@@ -1,8 +1,7 @@
 var NUMTOWERTYPE = 2; // 塔的种类数
 var PREFIXOFTOWERBTN = "btnTower"; // 塔按钮的前缀
-var uibuild = Class(object, {
+var UIBuild = Class(object, {
     onCreate: function (objectTag) {
-
         //ui
         var root = GetRootGameObj();
         this.ui = GetSubComponent(objectTag, "UITowerChooser");
@@ -13,8 +12,8 @@ var uibuild = Class(object, {
         this.selectedframeAni = CreateGameObjectFromTemplate("selectedFrameAni"); // 选中框动画
         this.arrayBtnTower = [];    // 选塔按钮组
 
-
-        this.numberSelectedTowerType = -1; // 选中的塔图标类型
+        this.numberSelectedTowerType = null; // 选中的塔图标类型
+        this.isShow = false; // 是否打开显示了
 
         this.selectedframeAni.setVisible(false);
         root.addChild(this.selectedframeAni);
@@ -41,6 +40,7 @@ var uibuild = Class(object, {
 
     setVisible: function (isVisible) {
         this.go.setVisible(isVisible);
+        this.isShow = isVisible;
     },
 
 
@@ -56,13 +56,9 @@ var uibuild = Class(object, {
         var pos = new GLKVector4();
         pos.x = 100;
         pos.y = 100;
-<<<<<<< HEAD
-        this.selectedframeAni.setPosition(pos); //this.arrayBtnTower[type].getX());
-=======
         print(this.arrayBtnTower[type]);
-        print("xxx=" + this.arrayBtnTower[type].getPositionX());
-        //this.selectedframeAni.setPosition(  );
->>>>>>> Change architecture
+        //print("xxx=" + this.arrayBtnTower[type].getPositionX());
+        this.selectedframeAni.setPosition(pos);
         //print(this.selectedframeAni);
     }
 });

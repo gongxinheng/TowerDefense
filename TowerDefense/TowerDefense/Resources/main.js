@@ -19,8 +19,8 @@ var GameJS = Class(object,
                            this.js_Game.setDisplayStats(true);
                            this.js_Game.setDesignResolutionSize(480, 320, 1);
                            this.js_Game.initialize();
-                           print("init gamemap");
-                           this.js_Scene = this.js_Game.createSceneWithJson("gamemap.json");
+                           print("init GameMap");
+                           this.js_Scene = this.js_Game.createSceneWithJson("GameMap.json");
                            this.js_Scene.onEnter = this.onEnter;
                            this.js_Scene.onExit = this.onExit;
                            this.js_Game.update = this.frame;
@@ -37,9 +37,11 @@ var GameJS = Class(object,
                        },
                        loadJS: function () {
                            print("require js");
-                           Require("gamemap.js");
+                           Require("GameMap.js");
                            Require("uibuild.js");
                            Require("tower.js");
+                           //Require("towerrender.js");
+                           Require("gameworld.js");
                            print("require js over");
                        },
                        frame: function () {
@@ -47,7 +49,7 @@ var GameJS = Class(object,
                        onEnter: function () {
                            print("scene enter");
 
-                           var scene = new gamemap(10000);
+                           var scene = new GameMap(10000);
                            print("scene " + scene);
                        },
                        onExit: function () {

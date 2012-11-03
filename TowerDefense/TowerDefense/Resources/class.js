@@ -39,8 +39,8 @@ function Class(aBaseClass, aClassDefine)        //创建类的函数，用于声
         function new_(){
             this.Type = aClassDefine;
             if(aClassDefine.onCreate){
-                
-                aClassDefine.onCreate.apply( aClassDefine, arr_arg); //调用create函数
+
+                aClassDefine.onCreate.apply(this, arr_arg); //调用create函数
             }
         }
         new_.prototype = aClassDefine;          //对prototype赋值
