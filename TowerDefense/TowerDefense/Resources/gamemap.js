@@ -7,13 +7,14 @@ var PREFIXOFREALTOWER = "spritetower"; // 塔精灵的名前缀
 var GameMap = Class(object, {
     onCreate: function (objectTag) {
         this.towerUI = [];  // 地图上可见的塔
+        this.enemyUI = [];  // 地图上可见的敌人
+        this.uiBuild = new UIBuild(15000);
         this.gameworld = new GameWorld();
-        var root = GetRootGameObj();
         this.sprites = CreateGameObjectFromTemplate("sprites");
         this.selectionframe = GetSubComponent(10002, "selection");
+        this.selectedTilePos = { 'x': 0, 'y': 0 }; // 选中的格子位置
 
-        this.uiBuild = new UIBuild(15000);
-
+        var root = GetRootGameObj();
         this.selectionframe.setVisible(false); // 先隐藏
         this.selectionframe.setAnchorPoint(1, 1); // 设置锚点
 
@@ -25,10 +26,31 @@ var GameMap = Class(object, {
         var self = this;
         input.MultiTouchPressed = function (touches) {
             self.multiTouchPressed(touches);
-        }
+        };
         input.TouchPressed = function (x, y) {
             self.singleTouchPressed(x, y);
-        }
+        };
+
+        // 设置建造界面确认的回调
+        this.uiBuild.btnOKCallback = function () {
+            // 建造塔
+            if (self.uiBuild.numberSelectedTowerType != null) {
+                // 检查是否允许建造
+                if (self.gameworld.isBuildEnable) {
+                    // 检测是否堵口
+                    if (self.gameworld.checkIsCanBuild()) {
+                        var idNewTower = self.gameworld.buildTower(self.uiBuild.numberSelectedTowerType, self.selectedTilePos.x, self.selectedTilePos.y);
+                        // 将塔添加到地图中
+                        self.addTowerToMap(idNewTower, self.uiBuild.numberSelectedTowerType, self.selectedTilePos.x, self.selectedTilePos.y);
+                    }
+
+                    // 把塔添加到地图
+                    self.addTowerToMap(self.selectedTilePos.x, self.selectedTilePos.y);
+                    // 重置选中的建造塔类型
+                    self.uiBuild.numberSelectedTowerType = null;
+                }
+            }
+        };
     },
 
     multiTouchPressed: function (touches) {
@@ -41,37 +63,18 @@ var GameMap = Class(object, {
         var root = GetRootGameObj();
         var tilepos = this.calcTilePos(x, y);
         if (!this.uiBuild.isShow) {
+            this.selectedTilePos = tilepos;
             print("x=" + x + "y=" + y);
-            print("tttt=" + this.uiBuild.numberSelectedTowerType);
 
-            // 建造塔
-            if (this.uiBuild.numberSelectedTowerType != null) {
-                // 检查是否允许建造
-                if (this.gameworld.isBuildEnable) {
-                    // 检测是否堵口
-                    if (this.gameworld.checkIsCanBuild()) {
-                        var idNewTower = this.gameworld.buildTower(this.uiBuild.numberSelectedTowerType, tilepos.x, tilepos.y);
-                        // 将塔添加到地图中
-                        this.addTowerToMap(idNewTower, this.uiBuild.numberSelectedTowerType, tilepos.x, tilepos.y);
-                    }
+            pos.x = tilepos["x"] * TILESIZE + TILESIZE / 2;
+            pos.y = tilepos["y"] * TILESIZE + TILESIZE / 2;
+            this.selectionframe.setVisible(true);
+            this.selectionframe.setPosition(pos);
 
-                    // 把塔添加到地图
-                    this.addTowerToMap(tilepos.x, tilepos.y);
-                    // 重置选中的建造塔类型
-                    this.uiBuild.numberSelectedTowerType = null;
-                }
-            }
-            else {
-                pos.x = tilepos["x"] * TILESIZE + TILESIZE / 2;
-                pos.y = tilepos["y"] * TILESIZE + TILESIZE / 2;
-                this.selectionframe.setVisible(true);
-                this.selectionframe.setPosition(pos);
-
-                pos.x = 300;
-                pos.y = 300;
-                this.uiBuild.setPosition(pos);
-                this.uiBuild.setVisible(true);
-            }
+            pos.x = 300;
+            pos.y = 300;
+            this.uiBuild.setPosition(pos);
+            this.uiBuild.setVisible(true);
         }
     },
 
@@ -104,6 +107,9 @@ var GameMap = Class(object, {
         var root = GetRootGameObj();
         root.addChild(t);
         this.towerUI[id] = t;
+        t.removeFromParent();
         print("build tower id =" + id + "type =" + type);
+
+        this.gameworld.startDefense();
     }
 });

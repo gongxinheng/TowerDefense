@@ -11,7 +11,7 @@
             "class": "GUIMenuItemImage",
             "properties": {
               "selector": "",
-              "a3_spriteFileDisabled": "build_gunTower.png",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
               "a1_spriteFileNormal": "build_gunTower.png",
               "a2_spriteFileSelected": "build_gunTower.png",
               "spriteSheet": "",
@@ -24,8 +24,8 @@
               "javaScript": "ButtonEvent14",
               "actions": [],
               "position": [
-                180.0,
-                755.0
+                90.0,
+                713.0
               ],
               "positionRelative": [
                 0.0,
@@ -34,8 +34,8 @@
               "bUseRelativePos": false,
               "bAutoScale": false,
               "contentSize": [
-                20.0,
-                20.0
+                64.0,
+                64.0
               ],
               "anchorPoint": [
                 1.0,
@@ -102,7 +102,7 @@
             "class": "GUIMenuItemImage",
             "properties": {
               "selector": "",
-              "a3_spriteFileDisabled": "build_flyBulletTower.png",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
               "a1_spriteFileNormal": "build_flyBulletTower.png",
               "a2_spriteFileSelected": "build_flyBulletTower.png",
               "spriteSheet": "",
@@ -115,8 +115,8 @@
               "javaScript": "ButtonEvent16",
               "actions": [],
               "position": [
-                149.0,
-                755.0
+                101.0,
+                712.0
               ],
               "positionRelative": [
                 0.0,
@@ -125,8 +125,8 @@
               "bUseRelativePos": false,
               "bAutoScale": false,
               "contentSize": [
-                20.0,
-                20.0
+                64.0,
+                64.0
               ],
               "anchorPoint": [
                 0.5,
@@ -652,6 +652,419 @@
           "zOrder": 0,
           "lockedScaleRatio": false,
           "memberVarAssignmentName": "Node27",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
+              "a1_spriteFileNormal": "build_normalTower.png",
+              "a2_spriteFileSelected": "build_normalTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent33",
+              "actions": [],
+              "position": [
+                -42.0,
+                -38.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                64.0,
+                64.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1003,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 111,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnTower2",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "position": [
+            279.0,
+            750.0
+          ],
+          "positionRelative": [
+            0.871875,
+            1.5625
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node34",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
+              "a1_spriteFileNormal": "build_fireBulletTower.png",
+              "a2_spriteFileSelected": "build_fireBulletTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent35",
+              "actions": [],
+              "position": [
+                -54.0,
+                -45.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                64.0,
+                64.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1004,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 111,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnTower3",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "position": [
+            362.0,
+            756.0
+          ],
+          "positionRelative": [
+            1.13125,
+            1.575
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node36",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUIMenuItemImage",
+        "properties": {
+          "selector": "",
+          "a3_spriteFileDisabled": "build_hiddenTower.png",
+          "a1_spriteFileNormal": "build_iceTower.png",
+          "a2_spriteFileSelected": "build_iceTower.png",
+          "spriteSheet": "",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "opacity": 255,
+          "javaScript": "ButtonEvent37",
+          "actions": [],
+          "position": [
+            379.0,
+            711.0
+          ],
+          "positionRelative": [
+            1.184375,
+            1.48125
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            64.0,
+            64.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": 1005,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 111,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "btnTower4",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
+              "a1_spriteFileNormal": "build_electricTower.png",
+              "a2_spriteFileSelected": "build_electricTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent38",
+              "actions": [],
+              "position": [
+                -151.0,
+                -71.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                64.0,
+                64.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1006,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 111,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnTower5",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "position": [
+            601.0,
+            782.0
+          ],
+          "positionRelative": [
+            1.878125,
+            1.62916672
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node39",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
+              "a1_spriteFileNormal": "build_finalTower.png",
+              "a2_spriteFileSelected": "build_finalTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent36",
+              "actions": [],
+              "position": [
+                -63.0,
+                -31.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                64.0,
+                64.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1007,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 0,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnTower6",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "position": [
+            584.0,
+            742.0
+          ],
+          "positionRelative": [
+            1.825,
+            1.54583335
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node37",
           "memberVarAssignmentType": 0,
           "customClass": ""
         }

@@ -1,0 +1,153 @@
+{ 
+    "sprites":
+                        {
+                        "classname": "GameObject",
+                        "x": 0,
+                        "y": 0,
+                        "objecttag":8999,
+                        "components": [
+                                       {
+                                       "classname": "Sprite",  //RenderComponent
+                                       "file": "enemyDead.sprite",        //对应的文件，动画编辑器提供
+                                       "name":"enemydie",
+									   "action": "0",
+									   "filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+                                       }
+                                       ]
+                        },
+
+		"spritetower0":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9000,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "guntower.sprite",        //对应的文件，动画编辑器提供
+										"name":"guntower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						},
+
+		"spritetower1":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9001,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "flyBulletTower.sprite",        //对应的文件，动画编辑器提供
+										"name":"flyBulletTower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						},
+
+		"spritetower2":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9002,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "normalTower.sprite",        //对应的文件，动画编辑器提供
+										"name":"normalTower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						},
+
+		"spritetower3":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9003,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "fireBulletTower.sprite",        //对应的文件，动画编辑器提供
+										"name":"fireBulletTower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						},
+
+		"spritetower4":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9004,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "iceTower.sprite",        //对应的文件，动画编辑器提供
+										"name":"iceTower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						},
+
+		"spritetower5":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9005,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "electricTower.sprite",        //对应的文件，动画编辑器提供
+										"name":"electricTower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						},
+
+		"spritetower6":
+						{
+						"classname": "GameObject",
+						"x": 0,
+						"y": 0,
+						"objecttag":9006,
+						"components": [
+										{
+										"classname": "Sprite",  //RenderComponent
+										"file": "finalTower.sprite",        //对应的文件，动画编辑器提供
+										"name":"finalTower",
+										"action": "0",
+										"filetype":2,
+										"isbigimage":1,
+										"usebatchnode":1
+										}
+										]
+						}
+}

@@ -147,7 +147,7 @@
     <None Include="..\Resources\menu1.png" />
     <None Include="..\Resources\menu2.png" />
     <None Include="..\Resources\selectedFrame.json" />
-    <None Include="..\Resources\sprites.json" />
+    <None Include="..\Resources\towersprites.json" />
     <None Include="..\Resources\tower.js" />
     <None Include="..\Resources\gamecontroller.js" />
     <None Include="..\Resources\towerrender.js" />

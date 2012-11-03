@@ -1,4 +1,4 @@
-var NUMTOWERTYPE = 2; // 塔的种类数
+var NUMTOWERTYPE = 7; // 塔的种类数
 var PREFIXOFTOWERBTN = "btnTower"; // 塔按钮的前缀
 var UIBuild = Class(object, {
     onCreate: function (objectTag) {
@@ -8,6 +8,7 @@ var UIBuild = Class(object, {
         this.go = root.getChildByTag(objectTag); // 选塔UI
         this.uiLabelDesc = this.ui.getNodeByName("textDesc");   // 说明文本标签
         this.btnOK = this.ui.getNodeByName("btnOK");            // 确认按钮
+        this.btnOKCallback = null;                              // 确认按钮回调
 
         this.selectedframeAni = CreateGameObjectFromTemplate("selectedFrameAni"); // 选中框动画
         this.arrayBtnTower = [];    // 选塔按钮组
@@ -20,6 +21,9 @@ var UIBuild = Class(object, {
         var self = this;
         this.btnOK.onClick = function () {
             self.setVisible(false);
+            if (self.btnOKCallback) {
+                self.btnOKCallback();
+            }
         }
         for (var i = 0; i < NUMTOWERTYPE; i++) {
             this.arrayBtnTower[i] = this.ui.getNodeByName(PREFIXOFTOWERBTN + i);
@@ -59,6 +63,6 @@ var UIBuild = Class(object, {
         print(this.arrayBtnTower[type]);
         //print("xxx=" + this.arrayBtnTower[type].getPositionX());
         this.selectedframeAni.setPosition(pos);
-        //print(this.selectedframeAni);
+        this.uiLabelDesc.setString("tower" + type);
     }
 });

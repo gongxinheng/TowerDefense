@@ -9,7 +9,8 @@ var GameWorld = Class(object, {
     onCreate: function () {
         this.arrayTowers = [];          // 游戏中的防御塔
         this.isBuildEnable = true;      // 是否允许建造
-        this.numGameMoney = 0;          // 游戏币
+        this.numberGameMoney = 0;       // 游戏币
+        this.numberLevel = 0;           // 游戏级别（关卡）
     },
 
     /**
@@ -34,6 +35,19 @@ var GameWorld = Class(object, {
         return ++IDCOUNTER;
     },
 
+
+    /**
+     * 开始防守
+     */
+    startDefense: function() {
+        t = CreateGameObjectFromTemplate("spritesenemy" + this.numberLevel);
+        var root = GetRootGameObj();
+        var pos = new GLKVector4();
+        pos.x = 260;
+        pos.y = 260;
+        t.setPosition(pos);
+        root.addChild(t);
+    },
     /**
     *退出游戏
     */

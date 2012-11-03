@@ -91,9 +91,6 @@
     <None Include="..\Resources\gamemap.json">
       <Filter>json</Filter>
     </None>
-    <None Include="..\Resources\sprites.json">
-      <Filter>json</Filter>
-    </None>
     <None Include="..\Resources\selectedFrame.json">
       <Filter>json</Filter>
     </None>
@@ -114,6 +111,9 @@
     </None>
     <None Include="..\Resources\enemy.js">
       <Filter>js\Model</Filter>
+    </None>
+    <None Include="..\Resources\towersprites.json">
+      <Filter>json</Filter>
     </None>
   </ItemGroup>
   <ItemGroup>

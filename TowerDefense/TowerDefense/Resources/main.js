@@ -17,16 +17,17 @@ var GameJS = Class(object,
                            this.js_Game.setInterfaceOrientation(3);
                            this.js_Game.setEnableRetinaDisplay(false);
                            this.js_Game.setDisplayStats(true);
-                           this.js_Game.setDesignResolutionSize(480, 320, 1);
+                           this.js_Game.setDesignResolutionSize(640, 960, 1);
                            this.js_Game.initialize();
                            print("init GameMap");
                            this.js_Scene = this.js_Game.createSceneWithJson("GameMap.json");
                            this.js_Scene.onEnter = this.onEnter;
                            this.js_Scene.onExit = this.onExit;
                            this.js_Game.update = this.frame;
-                           LoadGameObjectTemplateFile("sprites.json");
+                           LoadGameObjectTemplateFile("towersprites.json");
                            LoadGameObjectTemplateFile("towers.json");
                            LoadGameObjectTemplateFile("selectedFrameAni.json");
+                           LoadGameObjectTemplateFile("enemysprites.json");
                            print("init main js over");
                        },
 
@@ -42,15 +43,16 @@ var GameJS = Class(object,
                            Require("tower.js");
                            //Require("towerrender.js");
                            Require("gameworld.js");
+                           Require("enemy.js");
                            print("require js over");
                        },
                        frame: function () {
                        },
                        onEnter: function () {
-                           print("scene enter");
+                           print("map enter");
 
-                           var scene = new GameMap(10000);
-                           print("scene " + scene);
+                           map = new GameMap(10000);
+                           print("map " + map);
                        },
                        onExit: function () {
 
