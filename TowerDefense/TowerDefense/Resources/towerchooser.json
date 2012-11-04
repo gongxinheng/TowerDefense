@@ -58,11 +58,6 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             0.0,
             0.0
@@ -71,6 +66,11 @@
             0.0,
             0.0
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -149,19 +149,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             64.0,
             0.0
           ],
           "positionRelative": [
-            0.2,
+            0.1,
             0.0
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -190,6 +190,14 @@
         "children": [],
         "class": "GUILabelTTF",
         "properties": {
+          "position": [
+            164.0,
+            467.0
+          ],
+          "positionRelative": [
+            0.25625,
+            0.486458331
+          ],
           "fontSize": 14,
           "fontName": 0,
           "labelText": "",
@@ -207,14 +215,6 @@
           ],
           "spriteSheet": "",
           "actions": [],
-          "position": [
-            164.0,
-            467.0
-          ],
-          "positionRelative": [
-            0.5125,
-            0.972916663
-          ],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "anchorPoint": [
@@ -292,19 +292,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             204.0,
             817.0
           ],
           "positionRelative": [
-            0.6375,
-            1.70208335
+            0.31875,
+            0.8510417
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -353,8 +353,8 @@
             371.0
           ],
           "positionRelative": [
-            0.5,
-            0.7729167
+            0.25,
+            0.386458337
           ],
           "bUseRelativePos": false,
           "bAutoScale": false,
@@ -437,19 +437,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             393.0,
             817.0
           ],
           "positionRelative": [
-            1.228125,
-            1.70208335
+            0.6140625,
+            0.8510417
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -528,19 +528,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             230.0,
             348.0
           ],
           "positionRelative": [
-            0.71875,
-            0.725
+            0.359375,
+            0.3625
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -619,19 +619,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             361.0,
             348.0
           ],
           "positionRelative": [
-            1.128125,
-            0.725
+            0.5640625,
+            0.3625
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -710,19 +710,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             279.0,
             750.0
           ],
           "positionRelative": [
-            0.871875,
-            1.5625
+            0.4359375,
+            0.78125
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -801,19 +801,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             362.0,
             756.0
           ],
           "positionRelative": [
-            1.13125,
-            1.575
+            0.565625,
+            0.7875
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -860,8 +860,8 @@
             711.0
           ],
           "positionRelative": [
-            1.184375,
-            1.48125
+            0.5921875,
+            0.740625
           ],
           "bUseRelativePos": false,
           "bAutoScale": false,
@@ -941,19 +941,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             601.0,
             782.0
           ],
           "positionRelative": [
-            1.878125,
-            1.62916672
+            0.9390625,
+            0.814583361
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -1032,19 +1032,19 @@
         ],
         "class": "GUIMenu",
         "properties": {
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "position": [
             584.0,
             742.0
           ],
           "positionRelative": [
-            1.825,
-            1.54583335
+            0.9125,
+            0.7729167
           ],
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -1072,6 +1072,15 @@
     ],
     "class": "GUILayer",
     "properties": {
+      "anchorPoint": [
+        0.5,
+        0.5
+      ],
+      "contentSize": [
+        640.0,
+        960.0
+      ],
+      "customClass": "RootLayer",
       "touchEnabled": true,
       "accelerometerEnabled": false,
       "mouseEnabled": false,
@@ -1087,14 +1096,6 @@
       ],
       "bUseRelativePos": false,
       "bAutoScale": false,
-      "contentSize": [
-        320.0,
-        480.0
-      ],
-      "anchorPoint": [
-        0.5,
-        0.5
-      ],
       "scale": 1.0,
       "scaleX": 1.0,
       "scaleY": 1.0,
@@ -1105,10 +1106,9 @@
       "zOrder": 0,
       "lockedScaleRatio": false,
       "memberVarAssignmentName": "Node13",
-      "memberVarAssignmentType": 0,
-      "customClass": "RootLayer"
+      "memberVarAssignmentType": 0
     }
   },
-  "stageHeight": 480.0,
-  "stageWidth": 320.0
+  "stageHeight": 960.0,
+  "stageWidth": 640.0
 }

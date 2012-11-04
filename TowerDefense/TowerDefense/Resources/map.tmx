@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="26" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="mapBg" tilewidth="32" tileheight="32">
+  <image source="mapBg.png" width="640" height="832"/>
+  <tile id="11">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="BG" width="20" height="26">
+  <data encoding="base64" compression="zlib">
+   eJwV1YOyGAYAAMEX27Zt27Zt23baoI1t27Zt27ZtdTtz+w0XKCAgIDBBCEowghOCkIQiNGEISzjCE4GIRCIyUYhKNKITg5jEIjZxiEs84pOAhCQiMUlISjKSk4KUpCI1aUhLOtKTgYxkIjNZyEo2spODnOQiN3nISz7yU4CCFKIwRShKMYpTgpKUojRlKEs5ylOBilSiMlWoSjWqU4Oa1KI2dahLPerTgIY0ojFNaEozmtOClrSiNW1oSzva04GOdKIzXehKN7rTg570ojd96Es/+jOAgfzF3wxiMEMYyj/8yzCGM4KRjGI0YxjLOMYzgYlMYjJTmMo0pjODmcxiNnOYyzzms4CFLGIxS1jKMpazgpWsYjVrWMs61rOBjWxiM1vYyja2s4Od7GI3e9jLPvZzgIMc4jBHOMoxjnOCk5ziNGc4yznOc4GLXOIyV7jKNa5zg5vc4jZ3uMs97vOAhzziMU94yjOe84KXvOI1b3jLO97zgY984jNf+Mo3vvODn/ziN38ICCQCE4SgBCM4IQhJKEIThrCEIzwRiEgkIhOFqEQjOjGISSxiE4e4xCM+CUhIIhKThKQkIzkpSEkqUpOGtKQjPRnISCYyk4WsZCM7OchJLnKTh7zkIz8FKEghClOEohSjOCUoSSlKU4aylKM8FahIJSpThapUozo1qEktalOHutSjPg1oSCMa04SmNKM5LWhJK1rThra0oz0d6EgnOtOFrnSjOz3oSS9604e+9KM/AxjIX/zNIAYzhKH8w78MYzgjGMkoRjOGsYxjPBOYyCQmM4WpTGM6M5jJLGYzh7nMYz4LWMgiFrOEpSxjOStYySpWs4a1rGM9G9jIJjazha1sYzs72MkudrOHvexjPwc4yCEOc4SjHOM4JzjJKU5zhrOc4zwXuMglLnOFq1zjOje4yS1uc4e73OM+D3jIIx7zhKc84zkveMkrXvOGt7zjPR/4yCc+84WvfOM7P/jJL37zh//HH4jABCEowQhOCELyH5RtAEY=
+  </data>
+ </layer>
+ <objectgroup name="OL" width="20" height="26">
+  <object name="ExitUp" type="exit" x="288" y="0">
+   <polygon points="0,0 57,0 57,35 2,36 2,0"/>
+  </object>
+  <object name="ExitLeft" type="exit" x="1" y="347">
+   <polygon points="0,0 30,0 31,139 2,139 2,-2"/>
+  </object>
+  <object name="ExitRight" type="exit" x="607" y="344">
+   <polygon points="0,0 30,0 30,141 3,141 2,0"/>
+  </object>
+ </objectgroup>
+ <layer name="Blocks" width="20" height="26" visible="0">
+  <data encoding="base64" compression="zlib">
+   eJzjYWBg4CGAYYCQOmIxOeZRCkbNGzVvMJg3CigDgz1+R80bNY8c8wZr/QsAgzUGwQ==
+  </data>
+ </layer>
+</map>

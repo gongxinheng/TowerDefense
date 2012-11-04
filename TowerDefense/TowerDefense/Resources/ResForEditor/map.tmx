@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="30" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="BG" tilewidth="32" tileheight="32">
+  <image source="mapBg.png" width="640" height="960"/>
+  <tile id="11">
+   <properties>
+    <property name="Collidable" value="true"/>
+   </properties>
+  </tile>
+ </tileset>
+ <layer name="BG" width="20" height="30">
+  <data encoding="base64" compression="zlib">
+   eJwV1YOyGAYAAMEX27Zt27Zt22hs27Zt27Zts0EbJ93O3H7DBQoICAhMEIISjOCEICShCE0YwhKO8EQgIpGITBSiEo3oxCAmsYhNHOISj/gkICGJSEwSkpKM5KQgJalITRrSko70ZCAjmchMFrKSjezkICe5yE0e8pKP/BSgIIUoTBGKUozilKAkpShNGcpSjvJUoCKVqEwVqlKN6tSgJrWoTR3qUo/6NKAhjWhME5rSjOa0oCWtaE0b2tKO9nSgI53oTBe60o3u/EUPetKL3vShL/3ozwAGMojBDGEowxjOCEYyitGMYSzjGM8EJjKJyUxhKtOYzgxmMovZzGEu85jPAhayiMUsYSnLWM4KVrKK1axhLetYzwY2sonNbGEr29jODnayi93sYS/72M8BDnKIwxzhKMc4zglOcorTnOEs5zjPBS5yictc4SrXuM4NbnKL29zhLve4zwMe8ojHPOEpz3jOC17yite84S3veM/ffOAjn/jMP/zLF77yje/84Ce/+M0fAgKJwAQhKMEITghCEorQhCEs4QhPBCISichEISrRiE4MYhKL2MQhLvGITwISkojEJCEpyUhOClKSitSkIS3pSE8GMpKJzGQhK9nITg5ykovc5CEv+chPAQpSiMIUoSjFKE4JSlKK0pShLOUoTwUqUonKVKEq1ahODWpSi9rUoS71qE8DGtKIxjShKc1oTgta0orWtKEt7WhPBzrSic50oSvd6M5f9KAnvehNH/rSj/4MYCCDGMwQhjKM4YxgJKMYzRjGMo7xTGAik5jMFKYyjenMYCazmM0c5jKP+SxgIYtYzBKWsozlrGAlq1jNGtayjvVsYCOb2MwWtrKN7exgJ7vYzR72so/9HOAghzjMEY5yjOOc4CSnOM0ZznKO81zgIpe4zBWuco3r3OAmt7jNHe5yj/s84CGPeMwTnvKM57zgJa94zRve8o73/M0HPvKJz/zDv3zhK9/4zg9+8ovf/OH/8QciMEEISjCCE4KQhCI0YQhLOMITgYhEIjJRiEo0ohODmMQiNnGISzzik4CEJCIxSUhKMpKTgpSkIjVpSEs60pOBjGQiM1nISjayk4Oc5CI3echLPvJTgIIUojBFKEoxilOCkpSiNGUoSznKU4GKVKIyVahKNapTg5r8B03FEA4=
+  </data>
+ </layer>
+ <objectgroup name="OL" width="20" height="30">
+  <object name="ExitUp" type="exit" x="288" y="0">
+   <polygon points="0,0 57,0 57,35 2,36 2,0"/>
+  </object>
+  <object name="ExitDown" type="exit" x="288" y="923">
+   <polygon points="0,0 57,0 57,35 2,36 2,0"/>
+  </object>
+  <object name="ExitLeft" type="exit" x="0" y="410">
+   <polygon points="0,0 30,0 31,139 2,139 2,-2"/>
+  </object>
+  <object name="ExitRight" type="exit" x="608" y="406">
+   <polygon points="0,0 30,0 30,141 3,141 2,0"/>
+  </object>
+ </objectgroup>
+ <layer name="Blocks" width="20" height="30">
+  <data encoding="base64" compression="zlib">
+   eJzjYWBg4CGAYYCQOmIxOeZRCkbNGzVv1DzC5o0CysBgj99R80bNG47mDdb2CwBCbQeB
+  </data>
+ </layer>
+</map>

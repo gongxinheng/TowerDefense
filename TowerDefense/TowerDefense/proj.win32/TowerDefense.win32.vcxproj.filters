@@ -115,6 +115,9 @@
     <None Include="..\Resources\towersprites.json">
       <Filter>json</Filter>
     </None>
+    <None Include="..\Resources\AStar.js">
+      <Filter>js\Model</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="TowerDefense.rc">

@@ -9,27 +9,25 @@
           "classname": "Input"
         },
         {
-          "name": "Sprite",
-          "scale": 1,
-          "action": 0,
-          "rectpak": {
-            "x": 0,
-            "y": 0,
-            "width": 0,
-            "height": 0
-          },
-          "usebatchnode": 0,
-          "isbigimage": 0,
-          "enabletouch": 0,
-          "enableselfcollider": 0,
-          "file": "mapBg.png",
-          "filetype": 0,
-          "classname": "Sprite"
+          "openclip": 0,
+          "cliprect": [
+            {
+              "x": 0,
+              "y": 64,
+              "width": 640,
+              "height": 832
+            }
+          ],
+          "file": "map.tmx",
+          "filetype": 3,
+          "x": 0.0,
+          "name": "GameMap",
+          "classname": "GameMap"
         }
       ],
       "zorder": 0,
-      "y": 480,
-      "x": 320,
+      "y": 64,
+      "x": 0,
       "name": "backgroud",
       "objecttag": 10001,
       "visible": 1,
@@ -81,6 +79,40 @@
       "objecttag": 15000,
       "visible": 0,
       "classname": "GameObject"
+    },
+    {
+      "gameobjects": [],
+      "components": [
+        {
+          "file": "UITopBar.plist",
+          "name": "UITopBar",
+          "classname": "GUIDataLayer"
+        }
+      ],
+      "zorder": 0,
+      "y": 896,
+      "x": 0,
+      "name": "UITopBar",
+      "objecttag": 11000,
+      "visible": 1,
+      "classname": "GameObject"
+    },
+    {
+      "gameobjects": [],
+      "components": [
+        {
+          "file": "UIBottomBar.plist",
+          "name": "UIBottomBar",
+          "classname": "GUIDataLayer"
+        }
+      ],
+      "zorder": 0,
+      "y": 0,
+      "x": 0,
+      "name": "UIBottomBar",
+      "objecttag": 12000,
+      "visible": 1,
+      "classname": "GameObject"
     }
   ],
   "components": [
@@ -93,7 +125,7 @@
   "y": 0,
   "x": 0,
   "name": "GameObject",
-  "objecttag": 10000,
+  "objecttag": -1,
   "visible": 1,
   "classname": "GameObject"
 }

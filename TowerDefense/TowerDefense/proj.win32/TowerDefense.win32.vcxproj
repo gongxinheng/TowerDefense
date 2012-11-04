@@ -122,6 +122,7 @@
     </Midl>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="..\Resources\AStar.js" />
     <None Include="..\Resources\background.mp3" />
     <None Include="..\Resources\background3.png" />
     <None Include="..\Resources\class.js" />

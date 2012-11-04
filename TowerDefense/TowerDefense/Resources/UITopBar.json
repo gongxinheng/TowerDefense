@@ -1,0 +1,539 @@
+{
+  "centeredOrigin": false,
+  "fileType": "SweetPomeII UIEditor",
+  "fileVersion": 1,
+  "nodeGraph": {
+    "children": [
+      {
+        "children": [],
+        "class": "GUILabelAtlas",
+        "properties": {
+          "position": [
+            46.0,
+            12.0
+          ],
+          "positionRelative": [
+            0.071875,
+            0.1875
+          ],
+          "charMapFile": "numberpic.png",
+          "startCharMap": ".",
+          "itemWidth": 32,
+          "itemHeight": 43,
+          "labelText": "000",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            96.0,
+            43.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "lblMoney",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUISprite",
+        "properties": {
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteFile": "gold.png",
+          "spriteSheet": "",
+          "actions": [],
+          "position": [
+            5.0,
+            14.0
+          ],
+          "positionRelative": [
+            0.0078125,
+            0.21875
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            40.0,
+            36.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node18",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUISprite",
+        "properties": {
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteFile": "aerosiderite.png",
+          "spriteSheet": "",
+          "actions": [],
+          "position": [
+            181.0,
+            14.0
+          ],
+          "positionRelative": [
+            0.2828125,
+            0.21875
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            40.0,
+            36.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node19",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUILabelAtlas",
+        "properties": {
+          "position": [
+            225.0,
+            11.0
+          ],
+          "positionRelative": [
+            0.3515625,
+            0.171875
+          ],
+          "charMapFile": "numberpic.png",
+          "startCharMap": ".",
+          "itemWidth": 32,
+          "itemHeight": 43,
+          "labelText": "0",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            32.0,
+            43.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "lblAero",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUISprite",
+        "properties": {
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteFile": "level.png",
+          "spriteSheet": "",
+          "actions": [],
+          "position": [
+            287.0,
+            15.0
+          ],
+          "positionRelative": [
+            0.4484375,
+            0.234375
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            40.0,
+            34.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node21",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUISprite",
+        "properties": {
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteFile": "population.png",
+          "spriteSheet": "",
+          "actions": [],
+          "position": [
+            395.0,
+            14.0
+          ],
+          "positionRelative": [
+            0.6171875,
+            0.21875
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            40.0,
+            38.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node22",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUISprite",
+        "properties": {
+          "opacity": 255,
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "flipY": false,
+          "flipX": false,
+          "blendFunc": [
+            770,
+            771
+          ],
+          "spriteFile": "life.png",
+          "spriteSheet": "",
+          "actions": [],
+          "position": [
+            517.0,
+            13.0
+          ],
+          "positionRelative": [
+            0.8078125,
+            0.203125
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            40.0,
+            37.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node23",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUILabelAtlas",
+        "properties": {
+          "position": [
+            319.0,
+            11.0
+          ],
+          "positionRelative": [
+            0.4984375,
+            0.171875
+          ],
+          "charMapFile": "numberpic.png",
+          "startCharMap": ".",
+          "itemWidth": 32,
+          "itemHeight": 43,
+          "labelText": "00",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            64.0,
+            43.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "lblLevel",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUILabelAtlas",
+        "properties": {
+          "position": [
+            437.0,
+            11.0
+          ],
+          "positionRelative": [
+            0.6828125,
+            0.171875
+          ],
+          "charMapFile": "numberpic.png",
+          "startCharMap": ".",
+          "itemWidth": 32,
+          "itemHeight": 43,
+          "labelText": "00",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            64.0,
+            43.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "lblPopulation",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      },
+      {
+        "children": [],
+        "class": "GUILabelAtlas",
+        "properties": {
+          "position": [
+            559.0,
+            12.0
+          ],
+          "positionRelative": [
+            0.8734375,
+            0.1875
+          ],
+          "charMapFile": "numberpic.png",
+          "startCharMap": ".",
+          "itemWidth": 32,
+          "itemHeight": 43,
+          "labelText": "00",
+          "color": [
+            255,
+            255,
+            255
+          ],
+          "actions": [],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            64.0,
+            43.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "lblLife",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
+      }
+    ],
+    "class": "GUILayer",
+    "properties": {
+      "anchorPoint": [
+        0.5,
+        0.5
+      ],
+      "contentSize": [
+        640.0,
+        64.0
+      ],
+      "customClass": "RootLayer",
+      "touchEnabled": true,
+      "accelerometerEnabled": false,
+      "mouseEnabled": false,
+      "keyboardEnabled": true,
+      "actions": [],
+      "position": [
+        0.0,
+        0.0
+      ],
+      "positionRelative": [
+        0.0,
+        0.0
+      ],
+      "bUseRelativePos": false,
+      "bAutoScale": false,
+      "scale": 1.0,
+      "scaleX": 1.0,
+      "scaleY": 1.0,
+      "rotation": 0.0,
+      "tag": -1,
+      "isRelativeAnchorPoint": false,
+      "visible": true,
+      "zOrder": 0,
+      "lockedScaleRatio": false,
+      "memberVarAssignmentName": "Node13",
+      "memberVarAssignmentType": 0
+    }
+  },
+  "stageHeight": 64.0,
+  "stageWidth": 640.0
+}

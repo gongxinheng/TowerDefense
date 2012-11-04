@@ -38,15 +38,18 @@ var GameJS = Class(object,
                        },
                        loadJS: function () {
                            print("require js");
+                           Require("AStar.js");
                            Require("GameMap.js");
                            Require("uibuild.js");
                            Require("tower.js");
                            //Require("towerrender.js");
                            Require("gameworld.js");
                            Require("enemy.js");
+
                            print("require js over");
                        },
                        frame: function () {
+                           map.gameworld.frame();
                        },
                        onEnter: function () {
                            print("map enter");

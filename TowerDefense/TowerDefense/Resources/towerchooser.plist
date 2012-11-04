@@ -273,7 +273,7 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>0.200000002980232</real>
+							<real>0.100000001490116</real>
 							<real>0</real>
 						</array>
 						<key>bUseRelativePos</key>
@@ -340,8 +340,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>0.512499988079071</real>
-							<real>0.972916662693024</real>
+							<real>0.256249994039536</real>
+							<real>0.486458331346512</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -508,8 +508,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>0.637499988079071</real>
-							<real>1.70208334922791</real>
+							<real>0.318749994039536</real>
+							<real>0.851041674613953</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -575,8 +575,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>0.5</real>
-							<real>0.772916674613953</real>
+							<real>0.25</real>
+							<real>0.386458337306976</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -737,8 +737,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>1.22812497615814</real>
-							<real>1.70208334922791</real>
+							<real>0.614062488079071</real>
+							<real>0.851041674613953</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -884,8 +884,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>0.71875</real>
-							<real>0.725000023841858</real>
+							<real>0.359375</real>
+							<real>0.362500011920929</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1031,8 +1031,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>1.12812495231628</real>
-							<real>0.725000023841858</real>
+							<real>0.564062476158142</real>
+							<real>0.362500011920929</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1178,8 +1178,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>0.871874988079071</real>
-							<real>1.5625</real>
+							<real>0.435937494039536</real>
+							<real>0.78125</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1325,8 +1325,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>1.13125002384186</real>
-							<real>1.57500004768372</real>
+							<real>0.565625011920929</real>
+							<real>0.787500023841858</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1392,8 +1392,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>1.18437504768372</real>
-							<real>1.48125004768372</real>
+							<real>0.592187523841858</real>
+							<real>0.740625023841858</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1551,8 +1551,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>1.87812495231628</real>
-							<real>1.62916672229767</real>
+							<real>0.939062476158142</real>
+							<real>0.814583361148834</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1698,8 +1698,8 @@
 						</array>
 						<key>positionRelative</key>
 						<array>
-							<real>1.82500004768372</real>
-							<real>1.54583334922791</real>
+							<real>0.912500023841858</real>
+							<real>0.772916674613953</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />
@@ -1743,8 +1743,8 @@
 				</array>
 				<key>contentSize</key>
 				<array>
-					<real>320</real>
-					<real>480</real>
+					<real>640</real>
+					<real>960</real>
 				</array>
 				<key>customClass</key>
 				<string>RootLayer</string>
@@ -1797,8 +1797,8 @@
 			</dict>
 		</dict>
 		<key>stageHeight</key>
-		<integer>480</integer>
+		<integer>960</integer>
 		<key>stageWidth</key>
-		<integer>320</integer>
+		<integer>640</integer>
 	</dict>
 </plist>
