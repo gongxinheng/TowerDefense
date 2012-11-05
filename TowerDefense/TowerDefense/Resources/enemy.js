@@ -77,10 +77,11 @@ var Enemy = Class(object, {
             var rNumY = 0;
             //　随机完毕寻找出口
             if (this.randomCount <= 0) {
+                print("Find a way out!");
                 var maxval = 0;
                 for (var i = 0; i < DIRINITPOSMAPCOOR.length; ++i) {
-                    var temp = Math.abs(this.coorInMap.x - GameInfo.DIRINITPOSMAPCOOR[i].x) +
-					Math.abs(this.coorInMap.y - GameInfo.DIRINITPOSMAPCOOR[i].y);
+                    var temp = Math.abs(this.coorInMap.x - DIRINITPOSMAPCOOR[i].x) +
+					Math.abs(this.coorInMap.y - DIRINITPOSMAPCOOR[i].y);
                     //　找最远的出口
                     if (temp > maxval) {
                         maxval = temp;
@@ -114,6 +115,7 @@ var Enemy = Class(object, {
                         break;
                     }
                 }
+
             }
             this.currentDest = 0;
             this.isResearching = true;
@@ -122,10 +124,15 @@ var Enemy = Class(object, {
         else {
             this.getDir(vecPath);
             if (vecPath.length > 0) {
+                //print("vecPath.length=" + vecPath.length);
+                //print("coorX=" + this.coorInMap.x + "coorY=" + this.coorInMap.y);
+
                 var tempPt = vecPath[vecPath.length - 1];
-                if (this.coorInMap.x == tempPt.x && this.coorInMap.y == tempPt.y) {
+                //print("tempPtX=" + tempPt[0] + "tempPtY=" + tempPt[1]);
+                if (this.coorInMap.x == tempPt[0] && this.coorInMap.y == tempPt[1]) {
                     this.isResearching = false;
                     --this.randomCount; // 可随机次数减少
+                    print("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
                 }
             }
             this.move();
@@ -139,25 +146,28 @@ var Enemy = Class(object, {
     getDir: function (vecPath) {
         if (vecPath != null && vecPath.length > 0) {
             if (this.currentDest < vecPath.length) {
-                var coor = CalcTilePos(coor, this.position.x, this.position.y);
+                var coor = CalcTilePos(this.position.x, this.position.y);
                 var tX = vecPath[this.currentDest][0];
                 var tY = vecPath[this.currentDest][1];
-                //System.out.println("tx=" + tX + "  ty=" + tY);
+                //print("this.currentDest=" + this.currentDest);
+                //print("coor.x=" + coor.x + "coor.y=" + coor.y);
+                //print("tX= " + tX + " tY=" + tY);
+
                 if (coor.x < tX) {
-                    this.numberDirection = DIRDOWN;
+                    this.numberDirection = DIRRIGHT;
                 } else if ((coor.x > tX)) {
-                    this.numberDirection = DIRUP;
+                    this.numberDirection = DIRLEFT;
                 } else {
                     if (coor.y < tY) {
-                        this.numberDirection = DIRRIGHT;
+                        this.numberDirection = DIRUP;
                     } else if (coor.y > tY) {
-                        this.numberDirection = DIRLEFT;
+                        this.numberDirection = DIRDOWN;
                     } else {
                         ++this.currentDest;
+                       // print("DDDDDDDDDDDDDDDDD");
                     }
                 }
             }
-            //System.out.println("currentDest = " + currentDest);
         }
     },
 

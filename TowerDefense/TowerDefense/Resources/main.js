@@ -54,7 +54,7 @@ var GameJS = Class(object,
                        onEnter: function () {
                            print("map enter");
 
-                           map = new GameMap(10000);
+                           map = new MyGameMap(10000);
                            print("map " + map);
                        },
                        onExit: function () {

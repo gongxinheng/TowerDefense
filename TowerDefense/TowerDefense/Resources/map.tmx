@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.0" orientation="orthogonal" width="20" height="26" tilewidth="32" tileheight="32">
  <tileset firstgid="1" name="mapBg" tilewidth="32" tileheight="32">
-  <image source="mapBg.png" width="640" height="832"/>
+  <image source="mapBG.png" width="640" height="832"/>
   <tile id="11">
    <properties>
     <property name="Collidable" value="true"/>

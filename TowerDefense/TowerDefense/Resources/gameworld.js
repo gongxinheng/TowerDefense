@@ -64,10 +64,10 @@ var GameWorld = Class(object, {
     */
     startDefense: function () {
         print("start!");
-        var ID = this.addEnemy(0, 15, 15);
-        map.addEnemyToMap(ID, 0, 15, 15);
-        ID = this.addEnemy(0, 17, 4);
-        map.addEnemyToMap(ID, 0, 17, 4);
+        var ID = this.addEnemy(0, 5, 5);
+        map.addEnemyToMap(ID, 0, 5, 5);
+//        ID = this.addEnemy(0, 17, 4);
+//        map.addEnemyToMap(ID, 0, 17, 4);
     },
     /**
     *退出游戏

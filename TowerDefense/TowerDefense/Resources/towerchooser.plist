@@ -787,8 +787,8 @@
 								</array>
 								<key>contentSize</key>
 								<array>
-									<real>62</real>
-									<real>34</real>
+									<real>45</real>
+									<real>45</real>
 								</array>
 								<key>customClass</key>
 								<string></string>
@@ -845,9 +845,9 @@
 								<key>spriteFileDisabled</key>
 								<string></string>
 								<key>spriteFileNormal</key>
-								<string>menuItemBg.png</string>
+								<string>okbtn.png</string>
 								<key>spriteFileSelected</key>
-								<string></string>
+								<string>okbtn.png</string>
 								<key>spriteFramesFile</key>
 								<string></string>
 							</dict>
@@ -1243,8 +1243,8 @@
 								<integer>0</integer>
 								<key>position</key>
 								<array>
-									<real>-54</real>
-									<real>-45</real>
+									<real>-53</real>
+									<real>-43</real>
 								</array>
 								<key>positionRelative</key>
 								<array>
@@ -1356,85 +1356,6 @@
 						<integer>0</integer>
 						<key>touchEnabled</key>
 						<integer>1</integer>
-					</dict>
-				</dict>
-				<dict>
-					<key>children</key>
-					<array />
-					<key>class</key>
-					<string>GUIMenuItemImage</string>
-					<key>properties</key>
-					<dict>
-						<key>anchorPoint</key>
-						<array>
-							<real>0.5</real>
-							<real>0.5</real>
-						</array>
-						<key>contentSize</key>
-						<array>
-							<real>64</real>
-							<real>64</real>
-						</array>
-						<key>customClass</key>
-						<string></string>
-						<key>isRelativeAnchorPoint</key>
-						<false />
-						<key>lockedScaleRatio</key>
-						<false />
-						<key>memberVarAssignmentName</key>
-						<string>btnTower4</string>
-						<key>memberVarAssignmentType</key>
-						<integer>0</integer>
-						<key>position</key>
-						<array>
-							<real>379</real>
-							<real>711</real>
-						</array>
-						<key>positionRelative</key>
-						<array>
-							<real>0.592187523841858</real>
-							<real>0.740625023841858</real>
-						</array>
-						<key>bUseRelativePos</key>
-						<false />
-						<key>bAutoScale</key>
-						<false />
-						<key>rotation</key>
-						<real>0</real>
-						<key>scale</key>
-						<real>1</real>
-						<key>scaleX</key>
-						<real>1</real>
-						<key>scaleY</key>
-						<real>1</real>
-						<key>tag</key>
-						<integer>1005</integer>
-						<key>visible</key>
-						<true />
-						<key>zOrder</key>
-						<integer>111</integer>
-						<key>actions</key>
-						<array />
-						<key>opacity</key>
-						<integer>255</integer>
-						<key>javaScript</key>
-						<string>ButtonEvent37</string>
-						<key>color</key>
-						<array>
-							<integer>255</integer>
-							<integer>255</integer>
-							<integer>255</integer>
-						</array>
-						<key>selector</key>
-						<string></string>
-						<key>spriteFileDisabled</key>
-						<string>build_hiddenTower.png</string>
-						<key>spriteFileNormal</key>
-						<string>build_iceTower.png</string>
-						<key>spriteFileSelected</key>
-						<string>build_iceTower.png</string>
-						<key>spriteFramesFile</key>
-						<string></string>
 					</dict>
 				</dict>
 				<dict>
@@ -1700,6 +1621,153 @@
 						<array>
 							<real>0.912500023841858</real>
 							<real>0.772916674613953</real>
+						</array>
+						<key>bUseRelativePos</key>
+						<false />
+						<key>bAutoScale</key>
+						<false />
+						<key>rotation</key>
+						<real>0</real>
+						<key>scale</key>
+						<real>1</real>
+						<key>scaleX</key>
+						<real>1</real>
+						<key>scaleY</key>
+						<real>1</real>
+						<key>tag</key>
+						<integer>-1</integer>
+						<key>visible</key>
+						<true />
+						<key>zOrder</key>
+						<integer>0</integer>
+						<key>actions</key>
+						<array />
+						<key>accelerometerEnabled</key>
+						<integer>0</integer>
+						<key>keyboardEnabled</key>
+						<integer>1</integer>
+						<key>mouseEnabled</key>
+						<integer>0</integer>
+						<key>touchEnabled</key>
+						<integer>1</integer>
+					</dict>
+				</dict>
+				<dict>
+					<key>children</key>
+					<array>
+						<dict>
+							<key>children</key>
+							<array />
+							<key>class</key>
+							<string>GUIMenuItemImage</string>
+							<key>properties</key>
+							<dict>
+								<key>anchorPoint</key>
+								<array>
+									<real>0.5</real>
+									<real>0.5</real>
+								</array>
+								<key>contentSize</key>
+								<array>
+									<real>64</real>
+									<real>64</real>
+								</array>
+								<key>customClass</key>
+								<string></string>
+								<key>isRelativeAnchorPoint</key>
+								<false />
+								<key>lockedScaleRatio</key>
+								<false />
+								<key>memberVarAssignmentName</key>
+								<string>btnTower4</string>
+								<key>memberVarAssignmentType</key>
+								<integer>0</integer>
+								<key>position</key>
+								<array>
+									<real>70</real>
+									<real>-100</real>
+								</array>
+								<key>positionRelative</key>
+								<array>
+									<real>0</real>
+									<real>0</real>
+								</array>
+								<key>bUseRelativePos</key>
+								<false />
+								<key>bAutoScale</key>
+								<false />
+								<key>rotation</key>
+								<real>0</real>
+								<key>scale</key>
+								<real>1</real>
+								<key>scaleX</key>
+								<real>1</real>
+								<key>scaleY</key>
+								<real>1</real>
+								<key>tag</key>
+								<integer>1005</integer>
+								<key>visible</key>
+								<true />
+								<key>zOrder</key>
+								<integer>111</integer>
+								<key>actions</key>
+								<array />
+								<key>opacity</key>
+								<integer>255</integer>
+								<key>javaScript</key>
+								<string>ButtonEvent37</string>
+								<key>color</key>
+								<array>
+									<integer>255</integer>
+									<integer>255</integer>
+									<integer>255</integer>
+								</array>
+								<key>selector</key>
+								<string></string>
+								<key>spriteFileDisabled</key>
+								<string>build_hiddenTower.png</string>
+								<key>spriteFileNormal</key>
+								<string>build_iceTower.png</string>
+								<key>spriteFileSelected</key>
+								<string>build_iceTower.png</string>
+								<key>spriteFramesFile</key>
+								<string></string>
+							</dict>
+						</dict>
+					</array>
+					<key>class</key>
+					<string>GUIMenu</string>
+					<key>properties</key>
+					<dict>
+						<key>anchorPoint</key>
+						<array>
+							<real>0.5</real>
+							<real>0.5</real>
+						</array>
+						<key>contentSize</key>
+						<array>
+							<real>0</real>
+							<real>0</real>
+						</array>
+						<key>customClass</key>
+						<string></string>
+						<key>isRelativeAnchorPoint</key>
+						<false />
+						<key>lockedScaleRatio</key>
+						<false />
+						<key>memberVarAssignmentName</key>
+						<string>Node38</string>
+						<key>memberVarAssignmentType</key>
+						<integer>0</integer>
+						<key>position</key>
+						<array>
+							<real>310</real>
+							<real>812</real>
+						</array>
+						<key>positionRelative</key>
+						<array>
+							<real>0.484375</real>
+							<real>0.845833361148834</real>
 						</array>
 						<key>bUseRelativePos</key>
 						<false />

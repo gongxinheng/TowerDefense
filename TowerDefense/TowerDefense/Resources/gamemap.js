@@ -81,7 +81,7 @@ var MAPDATA = [
 
 // 上下左右四个入口点的初始位置地图行列坐标
 var DIRINITPOSMAPCOOR = [
-	{'x':0, 'y':10}, {'x':25, 'y':10}, {'x':12, 'y':0}, {'x':12, 'y':19}
+	{'x':0, 'y':15}, {'x':19, 'y':15}, {'x':9, 'y':2}, {'x':9, 'y':26}
 ];
 
 /**
@@ -142,7 +142,7 @@ function SetAreaFlag(tileX, tileY, w, v, flag, isAnc) {
     }
 }
 
-var GameMap = Class(object, {
+var MyGameMap = Class(object, {
     onCreate: function (objectTag) {
         this.towerUI = [];  // 地图上可见的塔
         this.enemyUI = [];  // 地图上可见的敌人
@@ -153,9 +153,10 @@ var GameMap = Class(object, {
         this.selectedTilePos = { 'x': 0, 'y': 0 }; // 选中的格子位置
 
         var root = GetRootGameObj();
-        var mapObj = root.getChildByTag(10001);
-        this.m_mapCom = mapObj.getComponentJS("GameMap");
-        //var tilepos = this.m_mapCom.getTileIndexInLayer("BG", 1, 1);
+        //        var mapObj = root.getChildByTag(10001);
+        //        this.m_mapCom = mapObj.getComponentJS("GameMap");
+        //        print("maptype= " + this.m_mapCom);
+        //        //var tilepos = this.m_mapCom.getTileIndexInLayer("BG", 1, 1);
         this.selectionframe.setVisible(false); // 先隐藏
         this.selectionframe.setAnchorPoint(1, 1); // 设置锚点
 
@@ -174,8 +175,10 @@ var GameMap = Class(object, {
 
         // 设置建造界面确认的回调
         this.uiBuild.btnOKCallback = function () {
+            print("jvklasjlkfsjaf" + self.uiBuild.numberSelectedTowerType);
             // 建造塔
             if (self.uiBuild.numberSelectedTowerType != null) {
+
                 // 检查是否允许建造
                 if (self.gameworld.isBuildEnable) {
                     // 检测是否堵口
@@ -200,8 +203,11 @@ var GameMap = Class(object, {
         print("I am " + this.uiBuild.isShow);
         var pos = new GLKVector4();
         var root = GetRootGameObj();
+        var mapObj = root.getChildByTag(10001);
+        this.m_mapCom = mapObj.getComponentJS("GameMap");
 
         var tilepos = CalcTilePos(x, y); // this.m_mapCom.getTileIndexInLayer("BG", x, y);
+        print(this.m_mapCom);
 
         if (!this.uiBuild.isShow) {
             if (CheckAreaValid(tilepos.x, tilepos.y, 2, 2, true)) {
@@ -232,11 +238,13 @@ var GameMap = Class(object, {
     *return 是否添加成功
     */
     addTowerToMap: function (id, type, tileX, tileY) {
+        print("adddddd");
         if (!CheckAreaValid(tileX, tileY, 2, 2, true)) {
             print("Failed!!" + tileX + " " + tileY + "!=" + MAPDATA[tileY][tileX]);
             return false;
         }
         t = CreateGameObjectFromTemplate("spritetower" + type);
+        print("tttt" + t);
         var pos = new GLKVector4();
         pos.x = tileX * TILESIZE;
         pos.y = tileY * TILESIZE;
@@ -291,7 +299,10 @@ var GameMap = Class(object, {
         pos.x = x;
         pos.y = y;
         enemy.setPosition(pos);
-        enemySprite = enemy.getComponentJS("4feetMonster");
-        enemySprite.setAction(dir);
+        if (enemy.numberDirection != dir) {
+            enemySprite = enemy.getComponentJS("4feetMonster");
+            enemySprite.setAction(dir);
+            enemy.numberDirection = dir;
+        }
     }
 });

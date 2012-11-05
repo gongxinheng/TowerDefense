@@ -58,6 +58,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             0.0,
             0.0
@@ -66,11 +71,6 @@
             0.0,
             0.0
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -149,6 +149,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             64.0,
             0.0
@@ -157,11 +162,6 @@
             0.1,
             0.0
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -190,14 +190,6 @@
         "children": [],
         "class": "GUILabelTTF",
         "properties": {
-          "position": [
-            164.0,
-            467.0
-          ],
-          "positionRelative": [
-            0.25625,
-            0.486458331
-          ],
           "fontSize": 14,
           "fontName": 0,
           "labelText": "",
@@ -215,6 +207,14 @@
           ],
           "spriteSheet": "",
           "actions": [],
+          "position": [
+            164.0,
+            467.0
+          ],
+          "positionRelative": [
+            0.25625,
+            0.486458331
+          ],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "anchorPoint": [
@@ -292,6 +292,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             204.0,
             817.0
@@ -300,11 +305,6 @@
             0.31875,
             0.8510417
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -437,6 +437,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             393.0,
             817.0
@@ -445,11 +450,6 @@
             0.6140625,
             0.8510417
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -482,8 +482,8 @@
             "properties": {
               "selector": "",
               "a3_spriteFileDisabled": "",
-              "a1_spriteFileNormal": "menuItemBg.png",
-              "a2_spriteFileSelected": "",
+              "a1_spriteFileNormal": "okbtn.png",
+              "a2_spriteFileSelected": "okbtn.png",
               "spriteSheet": "",
               "color": [
                 255,
@@ -504,8 +504,8 @@
               "bUseRelativePos": false,
               "bAutoScale": false,
               "contentSize": [
-                62.0,
-                34.0
+                45.0,
+                45.0
               ],
               "anchorPoint": [
                 0.5,
@@ -528,6 +528,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             230.0,
             348.0
@@ -536,11 +541,6 @@
             0.359375,
             0.3625
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -619,6 +619,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             361.0,
             348.0
@@ -627,11 +632,6 @@
             0.5640625,
             0.3625
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -710,6 +710,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             279.0,
             750.0
@@ -718,11 +723,6 @@
             0.4359375,
             0.78125
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -767,8 +767,8 @@
               "javaScript": "ButtonEvent35",
               "actions": [],
               "position": [
-                -54.0,
-                -45.0
+                -53.0,
+                -43.0
               ],
               "positionRelative": [
                 0.0,
@@ -801,6 +801,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             362.0,
             756.0
@@ -809,11 +814,6 @@
             0.565625,
             0.7875
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -834,55 +834,6 @@
           "zOrder": 0,
           "lockedScaleRatio": false,
           "memberVarAssignmentName": "Node36",
-          "memberVarAssignmentType": 0,
-          "customClass": ""
-        }
-      },
-      {
-        "children": [],
-        "class": "GUIMenuItemImage",
-        "properties": {
-          "selector": "",
-          "a3_spriteFileDisabled": "build_hiddenTower.png",
-          "a1_spriteFileNormal": "build_iceTower.png",
-          "a2_spriteFileSelected": "build_iceTower.png",
-          "spriteSheet": "",
-          "color": [
-            255,
-            255,
-            255
-          ],
-          "opacity": 255,
-          "javaScript": "ButtonEvent37",
-          "actions": [],
-          "position": [
-            379.0,
-            711.0
-          ],
-          "positionRelative": [
-            0.5921875,
-            0.740625
-          ],
-          "bUseRelativePos": false,
-          "bAutoScale": false,
-          "contentSize": [
-            64.0,
-            64.0
-          ],
-          "anchorPoint": [
-            0.5,
-            0.5
-          ],
-          "scale": 1.0,
-          "scaleX": 1.0,
-          "scaleY": 1.0,
-          "rotation": 0.0,
-          "tag": 1005,
-          "isRelativeAnchorPoint": false,
-          "visible": true,
-          "zOrder": 111,
-          "lockedScaleRatio": false,
-          "memberVarAssignmentName": "btnTower4",
           "memberVarAssignmentType": 0,
           "customClass": ""
         }
@@ -941,6 +892,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             601.0,
             782.0
@@ -949,11 +905,6 @@
             0.9390625,
             0.814583361
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -1032,6 +983,11 @@
         ],
         "class": "GUIMenu",
         "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
           "position": [
             584.0,
             742.0
@@ -1040,11 +996,6 @@
             0.9125,
             0.7729167
           ],
-          "touchEnabled": true,
-          "accelerometerEnabled": false,
-          "mouseEnabled": false,
-          "keyboardEnabled": true,
-          "actions": [],
           "bUseRelativePos": false,
           "bAutoScale": false,
           "contentSize": [
@@ -1068,19 +1019,101 @@
           "memberVarAssignmentType": 0,
           "customClass": ""
         }
+      },
+      {
+        "children": [
+          {
+            "children": [],
+            "class": "GUIMenuItemImage",
+            "properties": {
+              "selector": "",
+              "a3_spriteFileDisabled": "build_hiddenTower.png",
+              "a1_spriteFileNormal": "build_iceTower.png",
+              "a2_spriteFileSelected": "build_iceTower.png",
+              "spriteSheet": "",
+              "color": [
+                255,
+                255,
+                255
+              ],
+              "opacity": 255,
+              "javaScript": "ButtonEvent37",
+              "actions": [],
+              "position": [
+                70.0,
+                -100.0
+              ],
+              "positionRelative": [
+                0.0,
+                0.0
+              ],
+              "bUseRelativePos": false,
+              "bAutoScale": false,
+              "contentSize": [
+                64.0,
+                64.0
+              ],
+              "anchorPoint": [
+                0.5,
+                0.5
+              ],
+              "scale": 1.0,
+              "scaleX": 1.0,
+              "scaleY": 1.0,
+              "rotation": 0.0,
+              "tag": 1005,
+              "isRelativeAnchorPoint": false,
+              "visible": true,
+              "zOrder": 111,
+              "lockedScaleRatio": false,
+              "memberVarAssignmentName": "btnTower4",
+              "memberVarAssignmentType": 0,
+              "customClass": ""
+            }
+          }
+        ],
+        "class": "GUIMenu",
+        "properties": {
+          "touchEnabled": true,
+          "accelerometerEnabled": false,
+          "mouseEnabled": false,
+          "keyboardEnabled": true,
+          "actions": [],
+          "position": [
+            310.0,
+            812.0
+          ],
+          "positionRelative": [
+            0.484375,
+            0.845833361
+          ],
+          "bUseRelativePos": false,
+          "bAutoScale": false,
+          "contentSize": [
+            0.0,
+            0.0
+          ],
+          "anchorPoint": [
+            0.5,
+            0.5
+          ],
+          "scale": 1.0,
+          "scaleX": 1.0,
+          "scaleY": 1.0,
+          "rotation": 0.0,
+          "tag": -1,
+          "isRelativeAnchorPoint": false,
+          "visible": true,
+          "zOrder": 0,
+          "lockedScaleRatio": false,
+          "memberVarAssignmentName": "Node38",
+          "memberVarAssignmentType": 0,
+          "customClass": ""
+        }
       }
     ],
     "class": "GUILayer",
     "properties": {
-      "anchorPoint": [
-        0.5,
-        0.5
-      ],
-      "contentSize": [
-        640.0,
-        960.0
-      ],
-      "customClass": "RootLayer",
       "touchEnabled": true,
       "accelerometerEnabled": false,
       "mouseEnabled": false,
@@ -1096,6 +1129,14 @@
       ],
       "bUseRelativePos": false,
       "bAutoScale": false,
+      "contentSize": [
+        640.0,
+        960.0
+      ],
+      "anchorPoint": [
+        0.5,
+        0.5
+      ],
       "scale": 1.0,
       "scaleX": 1.0,
       "scaleY": 1.0,
@@ -1106,7 +1147,8 @@
       "zOrder": 0,
       "lockedScaleRatio": false,
       "memberVarAssignmentName": "Node13",
-      "memberVarAssignmentType": 0
+      "memberVarAssignmentType": 0,
+      "customClass": "RootLayer"
     }
   },
   "stageHeight": 960.0,
